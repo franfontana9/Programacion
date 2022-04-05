@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("../img/musica3.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
+}
+.container{
+    display: flex;
+    flex-direction:row;
+
+
+}
+.content{
+    background-color:rgb(15, 27, 55 );
+    margin: 25px;
+    padding: 40px;
+    color:darkgrey;
+    border-radius: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    background-color:rgba(61, 76, 70, 0.8)
+}
+.content_nav{
+    color: aliceblue;
+    margin: 10px;
+}
