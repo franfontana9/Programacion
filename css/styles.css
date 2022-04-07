@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
 }
-body{
+.body_index{
     font-family: 'Work Sans', sans-serif;
     background-image: url("../img/musica3.jpg");
     background-repeat: no-repeat;
@@ -32,4 +32,8 @@ body{
 .content_nav{
     color: aliceblue;
     margin: 10px;
+}
+
+.bodyplaylist{
+    font-family: 'Work Sans', sans-serif;
 }
