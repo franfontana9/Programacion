@@ -40,7 +40,11 @@ body{
     margin: 1px;
     justify-content: right;
 }
-
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
 
 /*ff*/
 
