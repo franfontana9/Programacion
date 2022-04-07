@@ -33,6 +33,14 @@ body{
     color: aliceblue;
     margin: 10px;
 }
+.footer_index{
+    display: flex;
+    background-color:rgba(100, 148, 237, 0.884);
+    padding: 1px;
+    margin: 1px;
+    justify-content: right;
+}
+
 
 /*ff*/
 
