@@ -44,15 +44,17 @@ body{
     border-radius: 10px;
     margin: 25px;
     padding: 40px;
-    font-size: 25px;
+    font-size: 40px;
+    margin-left: 11cm;
 }
 
 .ffh1 {
-    color: darkgrey;
-    border-radius: 10px;
+    color: rgb(220, 215, 215);
+    border-radius: 15px;
     margin: 25px;
     padding: 40px;
-    font-size: 50px;
+    font-size: 80px;
+    margin-left: 9cm;
 }
 
 .Ngenero {
@@ -70,20 +72,19 @@ body{
     padding: 40px;
 }
 
-.alist {
-    color: darkgrey;
-    list-style: none;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-    font-size: 20px;
-}
+
 
 .Dtitulo {
-    color: darkgrey;
+    color: rgb(220, 215, 215);
     border-radius: 10px;
     margin: 25px;
     padding: 40px;
     font-size: 50px;
+}
+
+.garticle{
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+    color: aliceblue;
 }
