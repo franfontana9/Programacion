@@ -12,18 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<nav>
+
+    <header>
+        <nav>
             <ul class="nav">
-                <li class="content_nav">|HOME|</li>
-                <li class="content_nav">|DETALLE|</li>
-                <li class="content_nav">|PLAYLIST|</li>
-                <li class="content_nav">|GÉNEROS|</li>
-                <li class="content_nav">|DETALLE DEL GÉNERO|</li>
-                <li class="content_nav">|RESULTADOS|</li>
+                <li class="content_nav"><a href="./index.html">|HOME|</a></li>
+                <li class="content_nav"><a href="./detalledeldisco.html">|DETALLE|</a></li>
+                <li class="content_nav"><a href="./playlist.html">|PLAYLIST|</a></li>
+                <li class="content_nav"><a href="./generos.html">|GÉNEROS|</a></li>
+                <li class="content_nav"><a href="./detalledelgenero.html">|DETALLE DEL GÉNERO|</a></li>
+                <li class="content_nav"><a href="./search-result.html">|RESULTADOS|</a></li>
+                <li class="content_nav">
+                    <form  action="./search-result.html" method="GET">
+                        <input type="text" name="resultado" value="" placeholder="Busqueda..." >
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
             </ul>
-</nav>
-</header>
+        </nav>
+    </header>
 <h1>DISCOS</h1>
 
 Nombre del disco.

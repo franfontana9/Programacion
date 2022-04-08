@@ -99,29 +99,46 @@ HEAD
     color: darkgrey;
     list-style: none;
     text-decoration: none;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-    font-size: 40px;
-    margin-left: 11cm;
 }
 
 .ffh1 {
     color: rgb(220, 215, 215);
-    border-radius: 15px;
     margin: 25px;
-    padding: 40px;
     font-size: 80px;
-    margin-left: 9cm;
+    text-align: center;
+}
+.sectionff{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
 }
 
-.Ngenero {
-    color: darkgrey;
-    border-radius: 10px;
-    margin: 25px;
+.articleff{
+    background-color: rgb(53, 53, 154);
+    margin: 50px;
+    border-radius: 20px;
     padding: 40px;
-    font-size: 30px;
+
 }
+.section2ff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.article2ff{
+    background-color: rgb(88, 88, 153);
+    margin: 40px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.pff{
+    text-align: center;
+}
+
+
 
 .artistas {
     color: darkgrey;
@@ -145,4 +162,45 @@ HEAD
     flex-direction:column;
     list-style: none;
     color: aliceblue;
+}
+<<<<<<< HEAD
+
+
+
+
+
+
+
+/*tb*/
+
+.h1_pl{
+    color: white;
+    margin: 30px;
+}
+
+.art_pl{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border-radius: 10px;
+    margin: 25px;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+.sec_pl{
+    display: flex;
+}
+
+.body_pl{
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+=======
+.body_generos{
+    font-family: 'Work Sans', sans-serif;
+>>>>>>> fb0e4b255cc46cf1f9138f7c823cc3d6357139c5
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
 }
