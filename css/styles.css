@@ -30,6 +30,10 @@
     justify-content: end;
     background-color:rgba(61, 76, 70, 0.8)
 }
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
 .content_nav{
     color: aliceblue;
     padding: 10px;
