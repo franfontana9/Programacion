@@ -163,7 +163,6 @@ HEAD
     list-style: none;
     color: aliceblue;
 }
-<<<<<<< HEAD
 
 
 
@@ -195,11 +194,14 @@ HEAD
 
 .body_pl{
     font-family: 'Work Sans', sans-serif;
-    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-=======
-.body_generos{
+    background-image: url("../img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+
+}
+   .body_generos{
     font-family: 'Work Sans', sans-serif;
->>>>>>> fb0e4b255cc46cf1f9138f7c823cc3d6357139c5
     background-repeat: no-repeat;
     background-position: right;
     background-color:rgb(5, 9, 19 )
