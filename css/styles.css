@@ -10,6 +10,13 @@
     background-position: right;
     background-color:rgb(5, 9, 19 )
 }
+.body_track{
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 );
+    background-image: url("../img/fondo_track.webp");
+}
 .container{
     display: flex;
     flex-direction:row;
@@ -67,12 +74,12 @@ a{
 
 }
 .container_addsong{
-    border: solid 3px rgb(50, 94, 128);
 }
 .content_addsong{
     background-color: rgb(147, 188, 222);
-    padding:5px;
-
+    border: solid 3px rgb(50, 94, 128);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 HEAD
