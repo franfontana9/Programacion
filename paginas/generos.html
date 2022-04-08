@@ -5,44 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Géneros</title>
-    <link rel="stylesheet" href="../Programacion/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/b962fa32af.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
-<body class="body_index">
-<header>
+<body class="body_generos">
+    <header>
         <nav>
             <ul class="nav">
-                <li class="content_nav">|HOME|</li>
-                <li class="content_nav">|DETALLE|</li>
-                <li class="content_nav">|PLAYLIST|</li>
-                <li class="content_nav">|GÉNEROS|</li>
-                <li class="content_nav">|DETALLE DEL GÉNERO|</li>
-                <li class="content_nav">|RESULTADOS|</li>
+                <li class="content_nav"><a href="./index.html">|HOME|</a></li>
+                <li class="content_nav"><a href="./detalledeldisco.html">|DETALLE|</a></li>
+                <li class="content_nav"><a href="./playlist.html">|PLAYLIST|</a></li>
+                <li class="content_nav"><a href="./generos.html">|GÉNEROS|</a></li>
+                <li class="content_nav"><a href="./detalledelgenero.html">|DETALLE DEL GÉNERO|</a></li>
+                <li class="content_nav"><a href="./search-result.html">|RESULTADOS|</a></li>
+                <li class="content_nav">
+                    <form  action="./search-result.html" method="GET">
+                        <input type="text" name="resultado" value="" placeholder="Busqueda..." >
+                        <button type="submit">Buscar</button>
+                    </form>
+                </li>
             </ul>
         </nav>
-</header>
+    </header>
 <h1 class="ffh1">GENEROS</h1>
-<article>  
-<ul>
-    <li><a href="./detalledelgenero.html" class="ffcul"> <strong>ROCK</strong> </a></li>
-<br>
-<br>
-<br>
-<br>
-    <li><a href="./detalledelgenero.html" class="ffcul"> <strong>RAP</strong> </a></li>
-<br>
-<br>
-<br>
-<br>
-    <li><a href="./detalledelgenero.html" class="ffcul"> <strong>REGGAE</strong> </a></li>
-<br>
-<br>
-<br>
-<br>
-    </ul>
-</article> 
+<section class="sectionff">
+<article class="articleff">  
+ <a href="../paginas/detalledelgenero.html" class="ffcul"> <strong>ROCK</strong> </a> 
+</article>
+<article class="articleff">
+    <a href="../paginas/detalledelgenero.html" class="ffcul"> <strong>RAP</strong> </a>
+ </article>
+<article class="articleff">
+<a href="../paginas/detalledelgenero.html" class="ffcul"> <strong>POP</strong> </a>
+</article>
+</section>
+<section class="section2ff">
+    <article class="article2ff">
+<img src="../img/red-hot-chili-peppers-1373984738-list-tablet-0.jpg"  height=250px>
+<p class="pff">Red Hot Chili Peppers</p>
+    </article>
+<article class="article2ff">
+        <img src="../img/500x500.webp"  height=250px>
+        <p class="pff">EMINEM</p>
+
+</article>
+<article class="article2ff">
+    <img src="../img/500x500.jpg"  height=250px>
+    <p class="pff">Dua Lipa</p>
+</article>
+</section>
+    <section class="section2ff">
+    <article class="article2ff">
+<img src="../img/arctic-monkeys-L.webp"  height=250px>
+<p class="pff">Artic Monkeys</p>
+    </article>
+<article class="article2ff">
+        <img src="../img/avatars-000130284593-9su51z-t500x500.jpg"  height=250px>
+        <p class="pff">Snoop Dogg</p>
+</article>
+<article class="article2ff">
+    <img src="../img/dc5ac67cb5c533ea2857f004151c0cd5.jpg"  height=250px>
+    <p class="pff">Harry Styles</p>
+</article>
+    </section>
+<section class="section2ff">
+    <article class="article2ff">
+<img src="../img/Gorillaz-500x500.jpg"  height=250px>
+<p class="pff">Gorillaz</p>
+    </article>
+<article class="article2ff">
+        <img src="../img/500x500 (1).jpg"  height=250px>
+        <p class="pff">The Notorious</p>
+</article>
+<article class="article2ff">
+    <img src="../img/artworks-000449037453-3tazwk-t500x500.jpg"  height=250px>
+    <p class="pff">Michael Jackson</p>
+</article>
+</section>
 </body>
 </html>
