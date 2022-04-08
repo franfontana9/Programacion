@@ -172,6 +172,12 @@ HEAD
 }
 
 
+.body_generos{
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgb(31, 4, 57);
+     }
 
 
 
@@ -200,8 +206,20 @@ HEAD
 }
 
 .body_pl{
+     font-family: 'Work Sans', sans-serif;
+background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+background-repeat: no-repeat;
+background-position: right;
+background-color: black;
+}
+     
+   .body_generos{
     font-family: 'Work Sans', sans-serif;
-    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");}
-  
-  
-    
+    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
+}
+
+
+
