@@ -82,12 +82,12 @@ HEAD
     color: rgb(220, 215, 215);
     margin: 25px;
     font-size: 80px;
-    margin-left: 8cm;
+    text-align: center;
 }
 .sectionff{
     display: flex;
     flex-direction: row; 
-    margin-left: 5px;
+    justify-content: space-around; 
 }
 
 .articleff{
@@ -95,7 +95,24 @@ HEAD
     margin: 50px;
     border-radius: 20px;
     padding: 40px;
-    margin-left: 3cm;
+
+}
+.section2ff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.article2ff{
+    background-color: rgb(88, 88, 153);
+    margin: 40px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.pff{
+    text-align: center;
 }
 
 
@@ -122,4 +139,10 @@ HEAD
     flex-direction:column;
     list-style: none;
     color: aliceblue;
+}
+.body_generos{
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
 }
