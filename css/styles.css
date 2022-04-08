@@ -175,7 +175,7 @@ HEAD
 }
 .garticle{
     color: rgb(71, 37, 69);
-    background-color: cadetblue;
+    background-color: rgb(9, 110, 113);
     margin: 40px;
     border-radius: 20px;
     padding: 20px;
@@ -187,6 +187,10 @@ HEAD
     background-position: right;
     background-color: rgb(31, 4, 57);
      }
+
+.h2class {
+    font-size: 40px;
+}
 
 
 
