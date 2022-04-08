@@ -3,7 +3,7 @@
 *{
     box-sizing: border-box;
 }
-body{
+.body_index{
     font-family: 'Work Sans', sans-serif;
     background-image: url("../img/musica3.jpg");
     background-repeat: no-repeat;
@@ -58,6 +58,11 @@ body{
     background-color: rgb(148, 191, 206);
     padding: 10px;
 
+}
+
+HEAD
+.bodyplaylist{
+    font-family: 'Work Sans', sans-serif;
 }
 
 /*ff*/
