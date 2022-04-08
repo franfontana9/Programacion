@@ -67,29 +67,29 @@ body{
     color: darkgrey;
     list-style: none;
     text-decoration: none;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-    font-size: 40px;
-    margin-left: 11cm;
 }
 
 .ffh1 {
     color: rgb(220, 215, 215);
-    border-radius: 15px;
     margin: 25px;
-    padding: 40px;
     font-size: 80px;
-    margin-left: 9cm;
+    margin-left: 8cm;
+}
+.sectionff{
+    display: flex;
+    flex-direction: row; 
+    margin-left: 5px;
 }
 
-.Ngenero {
-    color: darkgrey;
-    border-radius: 10px;
-    margin: 25px;
+.articleff{
+    background-color: rgb(53, 53, 154);
+    margin: 50px;
+    border-radius: 20px;
     padding: 40px;
-    font-size: 30px;
+    margin-left: 3cm;
 }
+
+
 
 .artistas {
     color: darkgrey;
