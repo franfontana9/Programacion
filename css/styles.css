@@ -93,7 +93,10 @@ HEAD
 }
 
 /*ff*/
+/*detallesdelgenero*/ /*genero*/ /*detalledeldisco*/
 
+
+/*genero*/
 .body_generos{
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
@@ -146,7 +149,7 @@ HEAD
 }
 
 
-
+/*detallesdelgenero*/
 .artistas {
     color: darkgrey;
     border-radius: 10px;
@@ -162,22 +165,31 @@ HEAD
     margin: 25px;
     padding: 40px;
     font-size: 50px;
+    text-align: center;
+    background-color: rgb(11, 11, 11);
 }
-
-.garticle{
+.sectionde{
     display: flex;
-    flex-direction:column;
-    list-style: none;
-    color: aliceblue;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.garticle{
+    color: rgb(71, 37, 69);
+    background-color: cadetblue;
+    margin: 40px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
-
-.body_generos{
+.bodydetallegenero{
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
     background-position: right;
     background-color: rgb(31, 4, 57);
      }
+
+
+
 /*tb*/
 
 .h1_pl{
