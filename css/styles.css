@@ -29,8 +29,8 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: end;
-    background-color:rgba(61, 76, 70, 0.8)
+    justify-content:space-between;
+    background-color:black;
 }
 a{
     text-decoration: none;
@@ -38,8 +38,12 @@ a{
 }
 .content_nav{
     color: aliceblue;
-    padding: 10px;
+    padding: 15px;
 }
+.h3_index{
+    text-decoration: underline wavy violet;
+}
+
 .footer_index{
     display: flex;
     background-color:rgba(39, 52, 77, 0.884);
@@ -52,6 +56,10 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: right;
+}
+
+main{
+    background-image: url(../img/musica3.jpg);
 }
 /*detalle de canción*/
 .detalle_container{
@@ -87,6 +95,8 @@ a{
 }
 
 /*j*/
+
+
 HEAD
 .bodyplaylist{
     font-family: 'Work Sans', sans-serif;
