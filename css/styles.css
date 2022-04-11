@@ -14,6 +14,7 @@
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+    
 }
 .content{
     background-color:rgb(15, 27, 55 );
@@ -93,6 +94,7 @@ main{
     background-repeat: no-repeat;
     background-position: right;
     background-color:rgb(5, 9, 19 );
+
 }
 
 /*j*/
@@ -228,14 +230,14 @@ HEAD
 }
 
 .body_pl{
-    font-family: 'Work Sans', sans-serif;
-    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: black;
+     font-family: 'Work Sans', sans-serif;
+background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+background-repeat: no-repeat;
+background-position: right;
+background-color: black;
 }
      
-.body_generos{
+   .body_generos{
     font-family: 'Work Sans', sans-serif;
     background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
     background-repeat: no-repeat;
@@ -243,19 +245,5 @@ HEAD
     background-color:rgb(5, 9, 19 )
 }
 
-.a_ad{
-display: flex;
-flex-direction: column;
-color: white;
-border: 2px solid green;
-flex-wrap: wrap;
-width: 400px;
-padding: 20px;
-margin: 10px;
 
-}
-
-.h1_ad{
-    color: white;
-}
 
