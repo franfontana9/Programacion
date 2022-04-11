@@ -245,6 +245,17 @@ HEAD
 
 .a_ad{
 display: flex;
-flex-direction: row;
+flex-direction: column;
+color: white;
+border: 2px solid green;
+flex-wrap: wrap;
+width: 400px;
+padding: 20px;
+margin: 10px;
+
+}
+
+.h1_ad{
+    color: white;
 }
 
