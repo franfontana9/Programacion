@@ -207,24 +207,36 @@ HEAD
 
 /*tb*/
 
+/*playlist*/
+
 .h1_pl{
     color: white;
     margin: 30px;
 }
 
 .art_pl{
+   
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: black;
     border-radius: 10px;
-    margin: 25px;
+    margin: 10px;
     font-size: 30px;
-    border: 2px solid white;
-    padding: 30px;
+    border: 4px solid black;
+    padding: 10px;
+    background-color:gray ;
 }
 
 .sec_pl{
     display: flex;
+    flex-direction: row;
+    
+}
+
+.m_pl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .body_pl{
@@ -243,19 +255,60 @@ HEAD
     background-color:rgb(5, 9, 19 )
 }
 
+.artpl{
+    display: flex;
+}
+
+/*detalle de los artistas*/
+
 .a_ad{
 display: flex;
 flex-direction: column;
 color: white;
-border: 2px solid green;
+border: 2px solid blue;
 flex-wrap: wrap;
 width: 400px;
 padding: 20px;
 margin: 10px;
+border-radius: 5%;
+}
 
+.play_a{
+display: flex;
+flex-direction: row;
+justify-content: flex-end ; 
+margin: 10px;
+padding: 20px;
 }
 
 .h1_ad{
     color: white;
+    text-align: center;}
+
+.h3{
+display: flex;
+justify-content: center;
+}
+
+.art_ad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.h4_da{
+    text-align: center;
+}
+
+.a_ad{
+display: flex;
+flex-wrap: wrap;
+}
+
+.ev{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px ;
 }
 
