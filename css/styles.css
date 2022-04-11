@@ -227,14 +227,14 @@ HEAD
 }
 
 .body_pl{
-     font-family: 'Work Sans', sans-serif;
-background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-background-repeat: no-repeat;
-background-position: right;
-background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
 }
      
-   .body_generos{
+.body_generos{
     font-family: 'Work Sans', sans-serif;
     background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
     background-repeat: no-repeat;
@@ -242,5 +242,8 @@ background-color: black;
     background-color:rgb(5, 9, 19 )
 }
 
-
+.a_ad{
+display: flex;
+flex-direction: row;
+}
 
