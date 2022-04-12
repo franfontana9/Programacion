@@ -14,7 +14,7 @@
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    
+
 }
 .content{
     background-color:rgb(15, 27, 55 );
@@ -286,7 +286,7 @@ background-color: black;
 display: flex;
 flex-direction: column;
 color: white;
-border: 2px solid blue;
+border: 2px solid white;
 flex-wrap: wrap;
 width: 400px;
 padding: 20px;
@@ -332,4 +332,5 @@ flex-wrap: wrap;
     margin: 10px;
     border-radius: 15px ;
 }
+
 
