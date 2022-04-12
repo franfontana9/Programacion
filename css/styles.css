@@ -114,16 +114,23 @@ HEAD
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
     background-position: right;
-    background-color: rgb(31, 4, 57);
-    
-         }
+    background-color:rgb(5, 9, 19 ); }
 
 .ffcul {
     color: darkgrey;
     list-style: none;
     text-decoration: none;
 }
-
+.sech1{
+    display: flex;
+    justify-content: center;
+}
+.arth1{
+    background-color: rgb(42, 41, 41);
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
 .ffh1 {
     color: rgb(220, 215, 215);
     margin: 25px;
@@ -137,7 +144,7 @@ HEAD
 }
 
 .articleff{
-    background-color: rgb(53, 53, 154);
+    background-color: rgb(44, 44, 45);
     margin: 50px;
     border-radius: 20px;
     padding: 40px;
@@ -150,7 +157,7 @@ HEAD
 }
 
 .article2ff{
-    background-color: rgb(88, 88, 153);
+    background-color: rgb(111, 111, 112);
     margin: 40px;
     border-radius: 20px;
     padding: 20px;
@@ -259,6 +266,11 @@ background-color: black;
 
 .artpl{
     display: flex;
+}
+
+.playlistp{
+    display: inline;
+    padding: 10px;
 }
 
 /*detalle de los artistas*/
