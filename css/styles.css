@@ -17,12 +17,12 @@
 
 }
 .content{
-    background-color:rgb(19, 18, 18);
+    background-color:rgb(36, 35, 35);
     margin: 25px;
     padding: 50px;
     color:darkgrey;
     border-radius: 10px;
-    border: solid 10px rgb(255, 255, 255);
+    border: solid 10px rgb(0, 0, 0);
 }
 .nav{
     display: flex;
@@ -40,7 +40,9 @@ a{
     padding: 15px;
 }
 .h3_index{
-    text-decoration: underline wavy rgb(14, 141, 220);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: larger;
 }
 
 .footer_index{
@@ -74,19 +76,20 @@ main{
 
 }
 .detalle_content{
-    background-color: rgb(148, 191, 206);
+    background-color: rgb(78, 109, 120);
     padding: 100px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 5px rgb(235, 235, 242) solid;
 
 }
 
 .content_addsong{
-    background-color: rgb(147, 188, 222);
-    border: solid 3px rgb(50, 94, 128);
+    background-color: rgb(38, 55, 70);
+    border: solid 3px rgb(23, 42, 58);
     padding: 5px;
     border-radius: 5px;
+    color: rgb(196, 205, 212);
 
 }
 .body_track{
