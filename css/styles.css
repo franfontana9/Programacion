@@ -292,6 +292,7 @@ width: 400px;
 padding: 20px;
 margin: 10px;
 border-radius: 5%;
+background-color: rgba(59, 7, 107, 0.171);
 }
 
 .play_a{
@@ -304,7 +305,9 @@ padding: 20px;
 
 .h1_ad{
     color: white;
-    text-align: center;}
+    text-align: center;
+    margin: 50px;
+}
 
 .h3{
 display: flex;
@@ -327,7 +330,7 @@ flex-wrap: wrap;
 }
 
 .ev{
-    border: 2px solid red;
+    border: 2px solid rgb(240, 79, 16);
     padding: 10px;
     margin: 10px;
     border-radius: 15px ;
