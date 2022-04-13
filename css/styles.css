@@ -251,6 +251,40 @@ HEAD
 .h5ff{
     text-align: center;
 }
+.h1sec{
+    display: flex;
+    justify-content: center;
+
+}
+.h1art{
+    margin: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid rgb(30, 0, 255);
+}
+.h1ddd{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+}
+.spanff{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid white;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5%;
+    }
+.h3ff{
+        display: flex;
+        justify-content: center;
+        }
+.h4ff{
+            text-align: center;
+        }
     
 /*tb*/
 
