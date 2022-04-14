@@ -17,12 +17,12 @@
 
 }
 .content{
-    background-color:rgb(19, 18, 18);
+    background-color:rgb(36, 35, 35);
     margin: 25px;
     padding: 50px;
     color:darkgrey;
     border-radius: 10px;
-    border: solid 10px rgb(255, 255, 255);
+    border: solid 10px rgb(0, 0, 0);
 }
 .nav{
     display: flex;
@@ -40,7 +40,9 @@ a{
     padding: 15px;
 }
 .h3_index{
-    text-decoration: underline wavy rgb(14, 141, 220);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: larger;
 }
 
 .footer_index{
@@ -74,19 +76,20 @@ main{
 
 }
 .detalle_content{
-    background-color: rgb(148, 191, 206);
+    background-color: rgb(78, 109, 120);
     padding: 100px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 5px rgb(235, 235, 242) solid;
 
 }
 
 .content_addsong{
-    background-color: rgb(147, 188, 222);
-    border: solid 3px rgb(50, 94, 128);
+    background-color: rgb(38, 55, 70);
+    border: solid 3px rgb(23, 42, 58);
     padding: 5px;
     border-radius: 5px;
+    color: rgb(196, 205, 212);
 
 }
 .body_track{
@@ -115,13 +118,6 @@ HEAD
     background-repeat: no-repeat;
     background-position: right;
      }
-
-.ffcul {
-    color: rgb(255, 255, 255);
-    list-style: none;
-    text-decoration: none;
-    font-size: 30px;
-}
 .sech1{
     display: flex;
     justify-content: center;
@@ -129,16 +125,83 @@ HEAD
 .arth1{
     background-color: rgb(0, 0, 0);
     margin: 30px;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
 }
 .ffh1 {
     color: rgb(220, 215, 215);
     margin: 25px;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
 }
+.pgeneros{
+    font-size: 20px;
+}
+.ffsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ffarticle{
+    background-color: rgb(165, 26, 26);
+    margin: 50px;
+    border-radius: 20px;
+    padding: 80px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 5cm;
+}
+.ff2article{
+    background-color: rgb(34, 79, 14);
+    margin: 50px;
+    border-radius: 20px;
+    padding: 80px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+}
+.ff3article{
+    background-color: rgb(237, 12, 121);
+    margin: 50px;
+    border-radius: 20px;
+    padding: 80px;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    margin-right: 5cm;
+}
+/*detallesdelgenero*/
+
+.bodydetallegenero{
+    font-family: 'Work Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
+}
+.artistas {
+    color: darkgrey;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 40px;
+}
+
+.secdg{
+    display: flex;
+    justify-content: center;
+}
+.artdg{
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+}
+.Dtitulo {
+    color: rgb(220, 215, 215);
+    font-size: 50px;
+    text-align: center;
+}
+
 .sectionff{
     display: flex;
     flex-direction: row; 
@@ -167,60 +230,62 @@ HEAD
     border: 2px solid rgb(160, 160, 160);
     
 }
-
-
+.ffcul {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+}
 .pff{
     text-align: center;
     color: black;
     font-size: 18px;
 }
-
-
-/*detallesdelgenero*/
-.artistas {
-    color: darkgrey;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-}
-
-
-
-.Dtitulo {
-    color: rgb(220, 215, 215);
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-    font-size: 50px;
-    text-align: center;
-    background-color: rgb(11, 11, 11);
-}
-.sectionde{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-}
-.garticle{
-    color: rgb(71, 37, 69);
-    background-color: rgb(9, 110, 113);
-    margin: 40px;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.bodydetallegenero{
+/*detallesdeldisco*/
+.bodydetalledisco{
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
     background-position: right;
-    background-color: rgb(31, 4, 57);
-     }
+    background-color:rgb(5, 9, 19 )
+}
+.h5ff{
+    text-align: center;
+}
+.h1sec{
+    display: flex;
+    justify-content: center;
 
-.h2class {
+}
+.h1art{
+    margin: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid rgb(30, 0, 255);
+}
+.h1ddd{
+    color: rgb(255, 255, 255);
+    text-align: center;
     font-size: 40px;
 }
-
-
-
+.spanff{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid white;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5%;
+    }
+.h3ff{
+        display: flex;
+        justify-content: center;
+        }
+.h4ff{
+            text-align: center;
+        }
+    
 /*tb*/
 
 /*playlist*/
@@ -231,7 +296,6 @@ HEAD
 }
 
 .art_pl{
-   
     text-decoration: none;
     list-style: none;
     color: black;
@@ -288,7 +352,7 @@ flex-direction: column;
 color: white;
 border: 2px solid white;
 flex-wrap: wrap;
-width: 400px;
+width: 700px;
 padding: 20px;
 margin: 10px;
 border-radius: 5%;
@@ -307,6 +371,7 @@ padding: 20px;
     color: white;
     text-align: center;
     margin: 50px;
+    font-size: 40px;
 }
 
 .h3{
@@ -327,6 +392,8 @@ justify-content: center;
 .a_ad{
 display: flex;
 flex-wrap: wrap;
+margin: 30px;
+background-color: black;
 }
 
 .ev{
@@ -335,5 +402,26 @@ flex-wrap: wrap;
     margin: 10px;
     border-radius: 15px ;
 }
+.img_red{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
 
+.p_da{
+    text-decoration: underline;
+    text-align: center;
+    padding: 15px;
+    font-size: larger;
+}
 
+.sect_ad{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XtauLchPNeTr2Z3Kefs1vqC53EIicaSFfghhMK5bWA5b_dzhxiimCg7uJ-EGm1EnNuU&usqp=CAU);
+    background-size: 200px;
+    background-repeat: repeat;
+}
