@@ -124,6 +124,9 @@ HEAD
     background-repeat: no-repeat;
     background-position: right;
      }
+.fondo{
+    background-image: url(../img/musica3.jpg);
+}
 .sech1{
     display: flex;
     justify-content: center;
@@ -151,7 +154,7 @@ HEAD
 }
 
 .ffarticle{
-    background-color: rgb(165, 26, 26);
+    background-color: rgb(0, 0, 0);
     margin: 50px;
     border-radius: 20px;
     padding: 80px;
@@ -160,7 +163,7 @@ HEAD
     margin-left: 5cm;
 }
 .ff2article{
-    background-color: rgb(34, 79, 14);
+    background-color: rgb(0, 0, 0);
     margin: 50px;
     border-radius: 20px;
     padding: 80px;
@@ -168,7 +171,7 @@ HEAD
     text-align: center;
 }
 .ff3article{
-    background-color: rgb(237, 12, 121);
+    background-color: rgb(0, 0, 0);
     margin: 50px;
     border-radius: 20px;
     padding: 80px;
