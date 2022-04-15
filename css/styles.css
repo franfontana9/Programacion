@@ -253,9 +253,9 @@ HEAD
 /*detallesdeldisco*/
 .bodydetalledisco{
     font-family: 'Work Sans', sans-serif;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color:rgb(5, 9, 19 )
+   
+    background-size: 5cm;
+    background-image: url(../img/2519218234.jpg);
 }
 .h5ff{
     text-align: center;
@@ -270,6 +270,7 @@ HEAD
     border-radius: 30px;
     padding: 10px;
     border: 2px solid rgb(30, 0, 255);
+    background-color: black;
 }
 .h1ddd{
     color: rgb(255, 255, 255);
@@ -286,6 +287,7 @@ HEAD
     padding: 20px;
     margin: 10px;
     border-radius: 5%;
+    background-color: black;
     }
 .h3ff{
         display: flex;
