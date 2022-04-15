@@ -515,3 +515,15 @@ background-color: black;
     text-decoration: underline;
     
 }
+
+
+
+
+
+
+/*viewport*/
+@media(max-width:420px){
+    .container{
+        flex-direction: column;
+    }
+}
