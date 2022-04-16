@@ -350,11 +350,6 @@ HEAD
 
 
 
-
-
-
-
-
 /*tb*/
 
 /*playlist*/
@@ -517,6 +512,29 @@ background-color: black;
     text-decoration: underline;
     
 }
+
+
+
+
+/*resultados de búsqueda*/
+.container_search{
+    background-color: aliceblue;
+    padding: 100px;
+    margin: 70px;
+}
+.libox{
+    margin: 40px;
+}
+ul.search{
+    list-style-image: url(../img/magnifying-glass-solid.svg);
+}
+a.buscar{
+    color: black;
+}
+abbr{
+    text-decoration: none;
+}
+
 
 
 
