@@ -60,9 +60,10 @@ a{
     display: flex;
     background-color:rgba(39, 52, 77, 0.884);
     color: aliceblue;
-    padding-right: 10px;
-    margin: 1px;
-    justify-content: right;
+    justify-content: right;   
+}
+.footer_content{
+    margin: 10px;
 }
 .header{
     display: flex;
@@ -81,6 +82,9 @@ a{
 
 .main_track{
     background-image: url("../img/musica3.jpg");
+}
+.detail_track{
+    font-size: 30px;
 }
 .detalle_container{
     display: flex;
@@ -558,6 +562,14 @@ abbr{
     .container{
         flex-direction: column;
     }
+    .detalle_container{
+        margin: 100px;
+        justify-content: left;
+    }
+    .main_track{
+        background-image:none
+    }
+    
 }
 
 
