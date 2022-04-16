@@ -6,6 +6,13 @@
 .nombrepag{
     font-family: 'Righteous', cursive;
 }
+.musik{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: azure;
+    font-size: 50px;
+}
 .logo{
     border-radius: 50px;
 }
@@ -64,6 +71,9 @@ a{
 }
 
 .bg{
+    background-image: url(../img/musica3.jpg);
+}
+.index{
     background-image: url(../img/musica3.jpg);
 }
 
