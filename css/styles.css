@@ -335,7 +335,13 @@ HEAD
 
 
 
-
+.body_generos{
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:rgb(5, 9, 19 )
+}
 
 
 
@@ -367,28 +373,25 @@ HEAD
 
 /*playlist*/
 
+.body_pl{
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(5, 9, 19 );
+}
+
 .h1_pl{
-    color: white;
+    color: rgb(196, 205, 212);    
     margin: 30px;
     text-align: center;
     font-size: 70px;
 }
 
-.art_pl{
-    text-decoration: none;
-    list-style: none;
-    border-radius: 10px;
-    margin: 10px;
-    font-size: 30px;
-    border: 4px solid white;
-    padding: 10px;
-    background-color:rgb(161, 4, 4) ;
+.sectpl_h2{
+    display: flex;
+    justify-content: space-around;
 }
 
-.sec_pl{
-    display: flex;
-    flex-direction: row;
-    
+.h2_pl{
+    color: rgb(196, 205, 212);    
 }
 
 .m_pl{
@@ -397,19 +400,27 @@ HEAD
     justify-content: space-around;
 }
 
-.body_pl{
-    font-family: 'Work Sans', sans-serif;
-    background-color: rgb(15, 15, 15);
-}
-     
-   .body_generos{
-    font-family: 'Work Sans', sans-serif;
-    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color:rgb(5, 9, 19 )
+.sec_pl{
+    display: flex;
+    flex-direction: row;
 }
 
+.art_pl{
+    text-decoration: none;
+    list-style: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 30px;
+    border: 4px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color:rgb(2, 2, 173) ;
+}
+
+.pl_dt{
+    text-decoration: none;
+    color: black;
+    }
+    
 .artpl{
     display: flex;
 }
@@ -419,26 +430,12 @@ HEAD
     padding: 10px;
 }
 
-.pl_dt{
-text-decoration: none;
-color: black;
-}
-
-.add_pl{
-    background-color: rgb(38, 55, 70);
-    border: solid 3px rgb(23, 42, 58);
-    padding: 5px;
-    border-radius: 5px;
-    color: rgb(196, 205, 212);
-}
-
 .addsong_pl{
     background-color: rgb(38, 55, 70);
     border: solid 3px rgb(23, 42, 58);
     padding: 5px;
     border-radius: 5px;
-    color: rgb(196, 205, 212);
-    
+    color: rgb(196, 205, 212);    
 }
 
 
@@ -524,19 +521,6 @@ background-color: black;
     background-size: 200px;
     background-repeat: repeat;
 }
-
-.sectpl_h2{
-    display: flex;
-    justify-content: space-around;
-}
-
-.h2_pl{
-    color: white;
-    text-decoration: underline;
-
-    
-}
-
 
 
 
