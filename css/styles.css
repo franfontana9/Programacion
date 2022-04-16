@@ -65,9 +65,10 @@ a{
     justify-content: right;
 }
 
-main{
+.bg{
     background-image: url(../img/musica3.jpg);
 }
+
 /*detalle de canción*/
 
 .main_track{
@@ -96,8 +97,8 @@ main{
     padding: 5px;
     border-radius: 5px;
     color: rgb(196, 205, 212);
-
 }
+
 .body_track{
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
@@ -422,6 +423,16 @@ color: black;
     color: rgb(196, 205, 212);
 }
 
+.addsong_pl{
+    background-color: rgb(38, 55, 70);
+    border: solid 3px rgb(23, 42, 58);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(196, 205, 212);
+    
+}
+
+
 
 /*detalle de los artistas*/
 
@@ -513,5 +524,25 @@ background-color: black;
 .h2_pl{
     color: white;
     text-decoration: underline;
-    
+
 }
+
+
+
+
+
+
+/*search-result*/
+.ulsr{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 30px;
+}
+
+.lisr{
+    color: white;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
