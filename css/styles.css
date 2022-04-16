@@ -252,8 +252,8 @@ HEAD
 .bodydetalledisco{
     font-family: 'Work Sans', sans-serif;
    
-    background-size: 5cm;
-    background-image: url(../img/2519218234.jpg);
+    background-size: 10cm;
+    background-image: url(../img/Eminem-Lyric-Wallpaper-by-KateAnnexTerrasochi-on-DeviantArt.jpg);
 }
 .h5ff{
     text-align: center;
@@ -267,13 +267,14 @@ HEAD
     margin: 40px;
     border-radius: 30px;
     padding: 10px;
-    border: 2px solid rgb(30, 0, 255);
+    border: 2px solid rgb(255, 0, 0);
     background-color: black;
 }
 .h1ddd{
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 40px;
+    
 }
 .spanff{
     display: flex;
@@ -281,22 +282,35 @@ HEAD
     color: white;
     border: 2px solid white;
     flex-wrap: wrap;
-    width: 400px;
+    width: 600px;
     padding: 20px;
     margin: 10px;
     border-radius: 5%;
     background-color: black;
     }
-.h3ff{
+.h2ff{
         display: flex;
         justify-content: center;
+        font-size: 35px;
         }
 .h4ff{
             text-align: center;
+            font-size: 20px;
         }
-    
-
-
+.h3ff{
+            text-align: center;
+        font-size: 25px;
+        }
+.imgdd{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
 
 
 
