@@ -425,13 +425,13 @@ HEAD
     font-size: 30px;
     border: 4px solid rgb(0, 0, 0);
     padding: 10px;
-    background-color:rgb(2, 2, 173) ;
+    background-color:rgb(47, 47, 87) ;
 }
 
 .pl_dt{
     text-decoration: none;
     color: black;
-    }
+}
     
 .artpl{
     display: flex;
@@ -519,8 +519,8 @@ HEAD
 .even_da{
     border: 2px solid rgb(240, 79, 16);
     padding: 10px;
-    margin: 10px;
     border-radius: 15px ;
+    text-align: center;
 }
 
 
@@ -530,15 +530,19 @@ HEAD
     padding: 100px;
     margin: 70px;
 }
+
 .libox{
     margin: 40px;
 }
+
 ul.search{
     list-style-image: url(../img/magnifying-glass-solid.svg);
 }
+
 a.buscar{
     color: black;
 }
+
 abbr{
     text-decoration: none;
 }
@@ -564,6 +568,52 @@ abbr{
         background-image:none
     }
     
+    .m_pl{
+        flex-direction: column;
+    }
+
+    .container_search{
+        background-color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .h1_sr{
+        margin: 15px;
+        font-size: medium;
+    }
+
+    .libox{
+        margin: 15px;
+    }
+
+    .a_ad{
+        width: 400px;
+    }
+
+    .img_red{
+        width: 350px;
+    }    
+
+    .art_pl{
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 4px solid rgb(0, 0, 0);
+        background-color:rgb(47, 47, 87) ;
+    }
+
+    .addsong_pl{
+        background-color: rgb(38, 55, 70);
+        border: solid 3px rgb(23, 42, 58);
+        border-radius: 5px;
+        color: rgb(196, 205, 212);    
+        font-size: small;
+    }
+
 }
+
+
 
 
