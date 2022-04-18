@@ -422,10 +422,6 @@ HEAD
     color: rgb(196, 205, 212);    
 }
 
-.h2vp{
-font-size: 0px;
-opacity: 0%;
-}
 
 
 /*detalle de los artistas*/
@@ -610,10 +606,9 @@ abbr{
 
     }
     
-    
 
-/*ff*/
-/*detallediscos*/
+     /*ff*/
+    /*detallediscos*/
     .bodydetalledisco{
         background-size: 6cm;
     }
@@ -650,12 +645,12 @@ abbr{
         justify-content: center;
         width: 350px;     
     }
-/*generos*/  
+    /*generos*/  
 
-.arth1{
-margin: 40px;
+     .arth1{
+     margin: 40px;
 
-}
+    }
 .ffh1 {
 margin: 15px;
 font-size: medium;
@@ -725,8 +720,5 @@ padding: 10px;
 .section2ff{
     margin-left: 10cm;
 }
+
 }
-
-
-
-
