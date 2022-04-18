@@ -527,6 +527,98 @@ abbr{
 }
 
 
+
+
+
+
+
+
+/*viewport*/
+@media(max-width:420px){
+    .body_index{
+        height: 100vw;
+        width: 100vh;
+    }
+    .container{
+        flex-direction: column;
+        padding: 120px;
+    }
+    .content{
+        padding-left: 150px;
+    }
+    .detalle_container{
+        margin: 100px;
+        justify-content: left;
+    }
+    .main_track{
+        background-image:none
+    }
+
+    
+    .m_pl{
+        flex-direction: column;
+    }
+
+    .container_search{
+        background-color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .h1_sr{
+        margin: 15px;
+        font-size: medium;
+    }
+
+    .libox{
+        margin: 15px;
+    }
+
+    .a_ad{
+        width: 400px;
+    }
+
+    .img_red{
+        width: 350px;
+    }    
+
+    .art_pl{
+        text-decoration: none;
+        list-style: none;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 4px solid rgb(0, 0, 0);
+        background-color:rgb(47, 47, 87) ;
+    }
+
+    .addsong_pl{
+        background-color: rgb(38, 55, 70);
+        border: solid 3px rgb(23, 42, 58);
+        border-radius: 5px;
+        color: rgb(196, 205, 212);    
+        font-size: small;
+    }
+
+    .h1_ad{
+        font-size: 20px;
+    }
+
+    .sectpl_h2{
+        display: flex;
+        flex-direction: row;
+   }
+
+    .h2vp{
+        color: rgb(196, 205, 212);    
+        margin: 15px;
+    }
+
+    .op{
+        opacity: 0%;
+        display: flex;
+
+    }
+
 /*ff*/
 /*detallediscos*/
     .bodydetalledisco{
@@ -641,95 +733,7 @@ padding: 10px;
     margin-left: 10cm;
 }
 
-
-
-
-/*viewport*/
-@media(max-width:420px){
-    .body_index{
-        height: 100vw;
-        width: 100vh;
-    }
-    .container{
-        flex-direction: column;
-        padding: 120px;
-    }
-    .content{
-        padding-left: 150px;
-    }
-    .detalle_container{
-        margin: 100px;
-        justify-content: left;
-    }
-    .main_track{
-        background-image:none
-    }
-
-    
-    .m_pl{
-        flex-direction: column;
-    }
-
-    .container_search{
-        background-color: aliceblue;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .h1_sr{
-        margin: 15px;
-        font-size: medium;
-    }
-
-    .libox{
-        margin: 15px;
-    }
-
-    .a_ad{
-        width: 400px;
-    }
-
-    .img_red{
-        width: 350px;
-    }    
-
-    .art_pl{
-        text-decoration: none;
-        list-style: none;
-        border-radius: 10px;
-        font-size: 15px;
-        border: 4px solid rgb(0, 0, 0);
-        background-color:rgb(47, 47, 87) ;
-    }
-
-    .addsong_pl{
-        background-color: rgb(38, 55, 70);
-        border: solid 3px rgb(23, 42, 58);
-        border-radius: 5px;
-        color: rgb(196, 205, 212);    
-        font-size: small;
-    }
-
-    .h1_ad{
-        font-size: 20px;
-    }
-
-    .sectpl_h2{
-        display: flex;
-        flex-direction: row;
-   }
-
-    .h2vp{
-        color: rgb(196, 205, 212);    
-        margin: 15px;
-    }
-
-    .op{
-        opacity: 0%;
-        display: flex;
-
-    }
-    
+}
 
 
 
