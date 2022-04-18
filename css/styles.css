@@ -369,13 +369,6 @@ HEAD
     background-color: rgb(5, 9, 19 );
 }
 
-.h1_pl{
-    color: rgb(196, 205, 212);    
-    margin: 30px;
-    text-align: center;
-    font-size: 70px;
-}
-
 .sectpl_h2{
     display: flex;
     justify-content: space-around;
@@ -429,7 +422,10 @@ HEAD
     color: rgb(196, 205, 212);    
 }
 
-
+.h2vp{
+    opacity: 0%;
+    font-size: 0px;
+}
 
 /*detalle de los artistas*/
 
@@ -530,210 +526,6 @@ abbr{
 
 
 
-
-
-
-/*viewport*/
-@media(max-width:420px){
-    .body_index{
-        height: 100vw;
-        width: 100vh;
-    }
-    .container{
-        flex-direction: column;
-        padding: 120px;
-    }
-    .content{
-        padding-left: 150px;
-    }
-    .detalle_container{
-        margin: 100px;
-        justify-content: left;
-    }
-    .main_track{
-        background-image:none
-    }
-
-    
-    .m_pl{
-        flex-direction: column;
-    }
-
-    .container_search{
-        background-color: aliceblue;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .h1_sr{
-        margin: 15px;
-        font-size: medium;
-    }
-
-    .libox{
-        margin: 15px;
-    }
-
-    .a_ad{
-        width: 400px;
-    }
-
-    .img_red{
-        width: 350px;
-    }    
-
-    .art_pl{
-        text-decoration: none;
-        list-style: none;
-        border-radius: 10px;
-        font-size: 15px;
-        border: 4px solid rgb(0, 0, 0);
-        background-color:rgb(47, 47, 87) ;
-    }
-
-    .addsong_pl{
-        background-color: rgb(38, 55, 70);
-        border: solid 3px rgb(23, 42, 58);
-        border-radius: 5px;
-        color: rgb(196, 205, 212);    
-        font-size: small;
-    }
-
-    .h1_ad{
-        font-size: 20px;
-    }
-
-    .sectpl_h2{
-        display: flex;
-        flex-direction: row;
-   }
-
-    .h2vp{
-        color: rgb(196, 205, 212);    
-        margin: 15px;
-    }
-
-    .op{
-        opacity: 0%;
-        display: flex;
-
-    }
-
-/*ff*/
-/*detallediscos*/
-    .bodydetalledisco{
-        background-size: 6cm;
-    }
-
-    .h1art{
-        margin: 10px;
-        border-radius: 10px;
-        padding: 20px;
-        margin-left: 10cm;
-    }
-    .h1ddd{
-        font-size: medium;  
-    }
-    .spanff{
-        width: 400px;
-        margin: 10px;
-        margin-left: 10cm;
-        }
-    .h2ff{
-            display: flex;
-            justify-content: center;
-            font-size: small;
-            }
-    .h4ff{
-                text-align: center;
-                font-size: small;
-            }
-    .h3ff{
-            
-            font-size: small;
-            }
-    .imgdd{
-        display: flex;
-        justify-content: center;
-        width: 350px;     
-    }
-/*generos*/  
-
-.arth1{
-margin: 40px;
-
-}
-.ffh1 {
-margin: 15px;
-font-size: medium;
-text-align: center;
-}
-.pgeneros{
-font-size: small;
-}
-
-
-.ffarticle{
-margin: 15px;
-padding: 10px;
-}
-.ff2article{
-margin: 15px;
-padding: 10px;
-}
-.ff3article{
-margin: 15px;
-padding: 10px;
-}
-
-.fondo{
-    background-size: cover ;
-}
-
-/*detallegenero*/
-
-
-.artdg{
-    margin: 10px;
-    margin-left: 10cm;
-}
-.Dtitulo {
-    color: rgb(220, 215, 215);
-    font-size: medium;
-    text-align: center;
-}
-
-
-.articleff{
-    margin: 20px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-
-.article2ff{
-    margin: 20px;
-    border-radius: 20px;
-    padding: 20px;
-}
-.ffcul {
-    font-size: small;
-}
-.pff{
-    font-size: small;
-}
-.imagenff{
-    width: 120px;
-    height: 120px;
-}
-.sectionff{
-    margin-left: 10cm;
-}
-.section2ff{
-    margin-left: 10cm;
-}
-
-}
 
 
 
