@@ -540,8 +540,16 @@ abbr{
 
 /*viewport*/
 @media(max-width:420px){
+    .body_index{
+        height: 100vw;
+        width: 100vh;
+    }
     .container{
         flex-direction: column;
+        padding: 120px;
+    }
+    .content{
+        padding-left: 150px;
     }
     .detalle_container{
         margin: 100px;
@@ -550,6 +558,7 @@ abbr{
     .main_track{
         background-image:none
     }
+
     
     .m_pl{
         flex-direction: column;
