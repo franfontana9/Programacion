@@ -131,10 +131,12 @@ HEAD
 
 /*genero*/
 .body_generos{
-    font-family: 'Work Sans', sans-serif;
-    background-repeat: no-repeat;
-    background-position: right;
-     }
+        font-family: 'Work Sans', sans-serif;
+        background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color:rgb(5, 9, 19 )
+ }
 .fondo{
     background-image: url(../img/musica3.jpg);
 }
@@ -590,83 +592,119 @@ abbr{
         font-size: small;
     }
 
-
-
+/*ff*/
+/*detallediscos*/
     .bodydetalledisco{
-        font-family: 'Work Sans', sans-serif;
-       
-        background-size: 5cm;
-        background-image: url(../img/Eminem-Lyric-Wallpaper-by-KateAnnexTerrasochi-on-DeviantArt.jpg);
+        background-size: 6cm;
     }
-    .h5ff{
-        text-align: center;
-    }
-    .h1sec{
-        display: flex;
-        justify-content: center;
-    
-    }
+
     .h1art{
-        margin: 40px;
-        border-radius: 30px;
-        padding: 10px;
-        border: 2px solid rgb(255, 0, 0);
-        background-color: black;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 10cm;
     }
     .h1ddd{
-        color: rgb(255, 255, 255);
-        text-align: center;
-        font-size: 40px;
-        
+        font-size: medium;  
     }
     .spanff{
-        display: flex;
-        flex-direction: column;
-        color: white;
-        border: 2px solid white;
-        flex-wrap: wrap;
-        width: 600px;
-        padding: 20px;
+        width: 400px;
         margin: 10px;
-        border-radius: 5%;
-        background-color: black;
+        margin-left: 10cm;
         }
     .h2ff{
             display: flex;
             justify-content: center;
-            font-size: 35px;
+            font-size: small;
             }
     .h4ff{
                 text-align: center;
-                font-size: 20px;
+                font-size: small;
             }
     .h3ff{
-                text-align: center;
-            font-size: 25px;
+            
+            font-size: small;
             }
     .imgdd{
         display: flex;
         justify-content: center;
-        width: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid rgb(255, 0, 0);
-        border-radius: 10px;
+        width: 350px;     
     }
-    
-    .body_generos{
-        font-family: 'Work Sans', sans-serif;
-        background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-color:rgb(5, 9, 19 )
-    }
+/*generos*/  
+
+.arth1{
+margin: 40px;
+
+}
+.ffh1 {
+margin: 15px;
+font-size: medium;
+text-align: center;
+}
+.pgeneros{
+font-size: small;
+}
 
 
+.ffarticle{
+margin: 15px;
+padding: 10px;
+}
+.ff2article{
+margin: 15px;
+padding: 10px;
+}
+.ff3article{
+margin: 15px;
+padding: 10px;
+}
+
+.fondo{
+    background-size: cover ;
+}
+
+/*detallegenero*/
 
 
+.artdg{
+    margin: 10px;
+    margin-left: 10cm;
+}
+.Dtitulo {
+    color: rgb(220, 215, 215);
+    font-size: medium;
+    text-align: center;
+}
 
+
+.articleff{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.article2ff{
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.ffcul {
+    font-size: small;
+}
+.pff{
+    font-size: small;
+}
+.imagenff{
+    width: 120px;
+    height: 120px;
+}
+.sectionff{
+    margin-left: 10cm;
+}
+.section2ff{
+    margin-left: 10cm;
+}
 }
 
 
