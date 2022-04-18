@@ -369,13 +369,6 @@ HEAD
     background-color: rgb(5, 9, 19 );
 }
 
-.h1_pl{
-    color: rgb(196, 205, 212);    
-    margin: 30px;
-    text-align: center;
-    font-size: 70px;
-}
-
 .sectpl_h2{
     display: flex;
     justify-content: space-around;
@@ -607,6 +600,8 @@ abbr{
     .h2vp{
         color: rgb(196, 205, 212);    
         margin: 15px;
+        opacity: 100%;
+        font-size: 24px;
     }
 
     .op{
