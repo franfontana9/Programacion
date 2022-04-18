@@ -529,7 +529,6 @@ abbr{
     /*Juli*/
     .container{
         flex-direction: column;
-        background-image: none;
         align-items: center;
     }
     .nav{
