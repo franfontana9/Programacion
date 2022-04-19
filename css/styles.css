@@ -526,17 +526,25 @@ abbr{
 
 /*viewport*/
 @media(max-width:420px){
+    /*Juli*/
     .container{
         flex-direction: column;
-        background-image: none;
+        align-items: center;
     }
+    .nav{
+        flex-wrap:wrap;
+        font-size: 10px;
+        
+    }
+
     .detalle_container{
-        margin: 100px;
-        justify-content: left;
+        margin: 50px;
     }
-    .main_track{
-        background-image:none
+    .detalle_content{
+        padding: 20px;
+
     }
+    /*Juli*/
     
     .m_pl{
         flex-direction: column;
