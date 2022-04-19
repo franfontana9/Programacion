@@ -620,18 +620,17 @@ abbr{
     }
 
     .h1art{
-        margin: 10px;
-        border-radius: 10px;
-        padding: 20px;
-        margin-left: 10cm;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 5px;
     }
     .h1ddd{
-        font-size: medium;  
+        font-size: small;  
     }
     .spanff{
-        width: 400px;
-        margin: 10px;
-        margin-left: 10cm;
+        width: 280px;
+        margin: 5px;
+        height: 700px;
         }
     .h2ff{
             display: flex;
@@ -649,8 +648,13 @@ abbr{
     .imgdd{
         display: flex;
         justify-content: center;
-        width: 350px;     
+        width: 50px;     
+        height: 50px;
     }
+.iframeff{
+    width: 250px;
+    height: 300px;
+}
     /*generos*/  
 
  .arth1{
@@ -687,8 +691,8 @@ padding: 10px;
 
 
 .artdg{
-    margin: 10px;
-    margin-left: 10cm;
+    margin: 5px;
+    padding: 5px;
 }
 .Dtitulo {
     color: rgb(220, 215, 215);
@@ -698,31 +702,28 @@ padding: 10px;
 
 
 .articleff{
-    margin: 20px;
+    margin: 5px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 
 .article2ff{
-    margin: 20px;
-    border-radius: 20px;
-    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
 }
 .ffcul {
     font-size: small;
 }
 .pff{
-    font-size: small;
+    font-size: 8px;
 }
 .imagenff{
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
 }
 .sectionff{
-    margin-left: 10cm;
-}
-.section2ff{
-    margin-left: 10cm;
+    font-size: 10px;
 }
 }
