@@ -1,7 +1,7 @@
 //canciones
 
 
-let url = "https://api.allorigins.win/get?url= https://api.deezer.com/chart"
+let url = "https://api.allorigins.win/get?url= https://api.deezer.com/track/3135556 "
 
 fetch(url)
     .then(function(response){
@@ -10,8 +10,6 @@ fetch(url)
     .then(function(data){
         console.log(data.contents);
         let info = data
-
-        //capturamos la lista de canciones
 
         let section = document.querySelector(".canciones");
         let article = "";
