@@ -9,19 +9,16 @@ fetch(url)
     })
     .then(function(data){
         console.log(data.contents);
-        let info = data
+        let info = data.contents;
 
         let section = document.querySelector(".canciones");
         let article = "";
-        for(i=0; i<info.length; i++ ){
             article += `<article>
-            <h4><a href="./detail-track.html">${data[i].tracks.title}</a></h4>
-                <p>${data[i].tracks.title}</p>
-                <img src="${data[i].picture}" height=150px >
+            <h4><a href="./detail-track.html?id=${info.id}">${info.title}</a></h4>
+                <p>${info.name}</p>
+                <img src="${info.picture}" height=150px >
             </article>`
-
-        }
-        section.innerHTML += article
+        section.innerHTML = article
     })
     .catch(function(error){
         console.log(error);
