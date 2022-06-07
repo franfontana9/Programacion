@@ -1,7 +1,7 @@
 //canciones
 
 
-let url = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks"
+let url = "https://api.allorigins.win/raw?url= http://api.deezer.com/chart/0/tracks"
 
 fetch(url)
     .then(function(response){
