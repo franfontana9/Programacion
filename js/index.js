@@ -80,5 +80,4 @@ fetch(urlArtistas)
             `
         }
         artistas.innerHTML = listaArtistas
-        listaArtistas.style.justifyContent= "centre"
     })
