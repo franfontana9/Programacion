@@ -31,12 +31,12 @@ fetch(url)
     })
 
 //Artistas
- let link = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums"
+//  let link = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums"
  
- fetch(link)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data)
-    })
+//  fetch(link)
+//     .then(function(response){
+//         return response.json();
+//     })
+//     .then(function(data){
+//         console.log(data)
+//     })
