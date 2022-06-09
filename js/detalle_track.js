@@ -28,6 +28,11 @@ fetch(urlDetalle)
     // Favoritos
     let cancion = document.querySelector(".cancion");
     let cancionesFavoritas = [];
+    let recuperoLista = localStorage.getItem("cancionesFavoritas");
+    if(recuperoLista){
+        let cancionesArray = JSON.parse(recuperoLista)
+        cancionesFavoritas = cancionesArray
+    }
 
     
     cancion.addEventListener("click", function(evento){
@@ -46,11 +51,6 @@ fetch(urlDetalle)
 
         let cancionesFavoritasString = JSON.stringify(cancionesFavoritas)
         localStorage.setItem("cancionesFavoritas", cancionesFavoritasString);
-        let recuperoLista = localStorage.getItem("cancionesFavoritas");
-        if(recuperoLista){
-            let cancionesArray = JSON.parse(recuperoLista)
-            cancionesFavoritas = cancionesArray
-        }
     })
 
     })
