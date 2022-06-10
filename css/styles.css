@@ -129,7 +129,7 @@ a{
 /*genero*/
 .body_generos{
         font-family: 'Work Sans', sans-serif;
-        background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
+
         background-repeat: no-repeat;
         background-position: right;
         background-color:rgb(5, 9, 19 )
@@ -145,17 +145,20 @@ a{
     background-color: rgb(0, 0, 0);
     margin: 30px;
     border-radius: 40px;
-    padding: 20px;
+    padding-top: 5px;
     border: 2px solid rgb(255, 255, 255);
 }
 .ffh1 {
     color: rgb(220, 215, 215);
     margin: 25px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
 }
+
 .pgeneros{
     font-size: 20px;
+    padding-top: 5px;
+    color: black;
 }
 .ffsection{
     display: flex;
@@ -165,30 +168,16 @@ a{
 
 .ffarticle{
     background-color: rgb(0, 0, 0);
-    margin: 50px;
+    margin: 20px;
     border-radius: 20px;
-    padding: 80px;
+    padding: 20px;
     border: 2px solid rgb(255, 255, 255);
     text-align: center;
     margin-left: 5cm;
+    padding-top: 5px;
 }
-.ff2article{
-    background-color: rgb(0, 0, 0);
-    margin: 50px;
-    border-radius: 20px;
-    padding: 80px;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-}
-.ff3article{
-    background-color: rgb(0, 0, 0);
-    margin: 50px;
-    border-radius: 20px;
-    padding: 80px;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    margin-right: 5cm;
-}
+
+
 /*detallesdelgenero*/
 
 .bodydetallegenero{
@@ -324,15 +313,6 @@ a{
     border-radius: 10px;
 }
 
-.body_generos{
-    font-family: 'Work Sans', sans-serif;
-    background-image: url("/img/vecteezy_contemporary-artistic-abstract-aesthetic-background-illustration_.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color:rgb(5, 9, 19 )
-}
-
-
 
 
 
@@ -422,10 +402,7 @@ a{
     color: rgb(196, 205, 212);    
 }
 
-.h2vp{
-    opacity: 0%;
-    font-size: 0px;
-}
+
 
 /*detalle de los artistas*/
 
