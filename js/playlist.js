@@ -1,20 +1,16 @@
-let recuperoStorage = localStorage.getItem("playlist");
-recuperoStorageAArray = JSON.parse(recuperoStorage);
+let recuperoStorage = localStorage.getItem("cancionesFavoritas");
+recuperoStorageToArray = JSON.parse(recuperoStorage);
 
-let section = document.querySelector(".playlist")
+let section = document.querySelector(".playlist");
+let contenidoSection = " ";
 
-let url="https://api.allorigins.win/raw?url= http://api.deezer.com/chart/0/tracks"
-
-fetch(url)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
+for(let i=0; i<recuperoStorageToArray.length; i++);{
        
+    contenidoSection += `<section class="Playlist">
+    <p class="title">Name: "${data.data.artist.Name}"</p>
+    <p class="Album">Album: "${data.data.album.title} </p>
+    </section>`
+}
 
-        
-    })
-    .catch(function(error){
-        console.log(error);
-    })
+section.innerHTML = contenidoSection;
+
