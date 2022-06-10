@@ -25,7 +25,7 @@ fetch (url)
         
         section.innerHTML = articles
 
-
+        
 
     })
 
