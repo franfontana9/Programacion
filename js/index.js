@@ -11,16 +11,15 @@ fetch(url)
         console.log(data);
         let info = data.data;
         let sectionCanciones = document.querySelector(".canciones");
-        let lista= " ";
+        let lista= "";
         
-        for (i=0; i<info.length; i++){
+        for (i=0; i<4; i++){
             lista += `<article>
             <h4><a href="./detail-track.html?id=${info[i].id}">${info[i].title}</a></h4>
             <p>${info[i].artist.name}</p>
             <img src="${info[i].album.cover}" height=150px>
             </article>`
          }
-         console.log(lista);
          sectionCanciones.innerHTML = lista;
          sectionCanciones.style.display="flex";
          sectionCanciones.style.flexDirection="column"
@@ -42,9 +41,9 @@ fetch(url)
         console.log(data)
     let infoAlbumes= data.data
     let sectionAlbumes = document.querySelector(".albumes")
-    let listaAlbumes = " "
+    let listaAlbumes = ""
 
-    for (i=0; i<infoAlbumes.length; i++){
+    for (i=0; i<4; i++){
         listaAlbumes += `<article>
         <h4><a href="./detalledeldisco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].title}</a></h4>
         <img src="${infoAlbumes[i].cover}" height=150px>
@@ -63,7 +62,7 @@ fetch(url)
 //Artistas
 let urlArtistas = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists"
 let artistas = document.querySelector(".art")
-let listaArtistas = " "
+let listaArtistas = ""
 
 fetch(urlArtistas)
     .then(function(response){
@@ -72,12 +71,13 @@ fetch(urlArtistas)
     .then(function(data){
         let infoArtistas = data.data
         console.log(data)
-        for (i=0; i<infoArtistas.length; i++){
+        for (i=0; i<4; i++){
             listaArtistas += `<article>
             <h4> <a href="./detalleartistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h4>
             <img src="${infoArtistas[i].picture}" height=150px>
             </article>
             `
         }
+        console.log(listaArtistas);
         artistas.innerHTML = listaArtistas
     })

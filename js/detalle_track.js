@@ -4,7 +4,7 @@ let idTrack = qsToObject.get("id");
 console.log(idTrack);
 
 
-let urlDetalle = `https://api.allorigins.win/raw?url= http://api.deezer.com/chart/0/tracks/?id=${idTrack}`
+let urlDetalle = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`
 
 fetch(urlDetalle)
     .then(function(response){
@@ -12,18 +12,18 @@ fetch(urlDetalle)
     })
     .then(function(data){
         console.log(data);
-        info= data.data;
+        info= data;
         let album = document.querySelector(".trackAlbum");
         let foto = document.querySelector(".fotoAlbum");
         let artista_track= document.querySelector(".trackArtist");
         let track= document.querySelector(".track");
         let duracion = document.querySelector(".trackduration");
 
-        // album.innerText= info.title;
-        // foto.src= info.album;
-        // artista_track.innerText= info.name;
-        // track.innerText= info.title;
-        // duracion.innerText=info.duration;
+        album.innerText= info.title;
+        foto.src= info.album.cover;
+        artista_track.innerText= info.artist.name;
+        track.innerText= info.title;
+        duracion.innerHTML +=info.duration;
         
     // Favoritos
     let cancion = document.querySelector(".cancion");
