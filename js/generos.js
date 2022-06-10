@@ -23,7 +23,7 @@ fetch (url)
 
         console.log(articles);
         
-        section.innerHTML = articles
+        section.innerHTML = articles;
 
         
 
