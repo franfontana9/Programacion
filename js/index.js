@@ -13,7 +13,7 @@ fetch(url)
         let sectionCanciones = document.querySelector(".canciones");
         let lista= "";
         
-        for (i=0; i<4; i++){
+        for (i=0; i<5; i++){
             lista += `<article>
             <h4><a href="./detail-track.html?id=${info[i].id}">${info[i].title}</a></h4>
             <p>${info[i].artist.name}</p>
@@ -43,16 +43,13 @@ fetch(url)
     let sectionAlbumes = document.querySelector(".albumes")
     let listaAlbumes = ""
 
-    for (i=0; i<4; i++){
+    for (i=0; i<5; i++){
         listaAlbumes += `<article>
         <h4><a href="./detalledeldisco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].title}</a></h4>
         <img src="${infoAlbumes[i].cover}" height=150px>
         </article>`
         }
         sectionAlbumes.innerHTML = listaAlbumes
-        sectionAlbumes.style.display="flex";
-        sectionAlbumes.style.flexDirection="column";
-        sectionAlbumes.style.flexWrap="noWrap";
     })
 
 
@@ -71,7 +68,7 @@ fetch(urlArtistas)
     .then(function(data){
         let infoArtistas = data.data
         console.log(data)
-        for (i=0; i<4; i++){
+        for (i=0; i<5; i++){
             listaArtistas += `<article>
             <h4> <a href="./detalleartistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h4>
             <img src="${infoArtistas[i].picture}" height=150px>

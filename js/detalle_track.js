@@ -6,6 +6,7 @@ console.log(idTrack);
 
 let urlDetalle = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`
 
+
 fetch(urlDetalle)
     .then(function(response){
         return response.json()
@@ -18,12 +19,16 @@ fetch(urlDetalle)
         let artista_track= document.querySelector(".trackArtist");
         let track= document.querySelector(".track");
         let duracion = document.querySelector(".trackduration");
+        let player = document.querySelector(".iframe")
 
-        album.innerText= info.title;
+        album.innerHTML= `<a href="detalledeldisco.html?id=${info.album.id}">${info.album.title}</a>`
         foto.src= info.album.cover;
-        artista_track.innerText= info.artist.name;
+        artista_track.innerHTML= `<a href="detalleartistas.html?id=${info.artist.id}">${info.artist.name}</a>`
         track.innerText= info.title;
         duracion.innerHTML +=info.duration;
+        player.src =`https://widget.deezer.com/widget/dark/track/${idTrack}`;
+        
+
         
     // Favoritos
     let cancion = document.querySelector(".cancion");
