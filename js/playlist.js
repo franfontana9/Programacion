@@ -1,7 +1,7 @@
 let recuperoStorage = localStorage.getItem("cancionesFavoritas");
 recuperoStorageToArray = JSON.parse(recuperoStorage);
 
-let section = document.querySelector(".playlist");
+let section = document.querySelector(".art_pl");
 let contenidoSection = " ";
 
 for(let i=0; i<recuperoStorageToArray.length; i++);{
