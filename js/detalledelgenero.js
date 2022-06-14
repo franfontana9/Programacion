@@ -19,8 +19,8 @@ fetch(urlDetalle)
         let title = document.querySelector('.pff');
         let image = document.querySelector('.imagenff');
 
-        title.innerText = data.data.title;
-        image.src= data.data.picture; 
+        title.innerText = info.title;
+        image.src= info.picture; 
         
         let articles = "";
 
