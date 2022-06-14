@@ -11,7 +11,7 @@ fetch (url)
 
         let articles = "";
 
-        for(let i=1 ; i< 4; i++){
+        for(let i=1 ; i<4 ; i++){
             
             articles += `<article class= "ffarticle">
                             <p class="pgeneros">Nombre: ${data.data[i].title}</p>
