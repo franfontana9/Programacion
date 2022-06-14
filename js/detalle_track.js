@@ -21,11 +21,11 @@ fetch(urlDetalle)
         let duracion = document.querySelector(".trackduration");
         let player = document.querySelector(".iframe")
 
-        album.innerHTML= `<a href="detalledeldisco.html?id=${info.album.id}">${info.album.title}</a>`
+        album.innerHTML= info.title
         foto.src= info.album.cover;
-        artista_track.innerHTML= `<a href="detalleartistas.html?id=${info.artist.id}">${info.artist.name}</a>`
-        track.innerText= info.title;
-        duracion.innerHTML +=info.duration;
+        artista_track.innerHTML= ` Artista: <a href="detalleartistas.html?id=${info.artist.id}">${info.artist.name}</a>`
+        track.innerHTML= `Album: <a href="detalledeldisco.html?id=${info.album.id}">${info.album.title}</a>`;
+        duracion.innerHTML += `Duración: ${info.duration} segundos`;
         player.src =`https://widget.deezer.com/widget/dark/track/${idTrack}`;
         
 
