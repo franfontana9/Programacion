@@ -12,5 +12,9 @@ for(let i=0; i<recuperoStorageToArray.length; i++);{
     </section>`
 }
 
+
 section.innerHTML = contenidoSection;
+
+
+
 
