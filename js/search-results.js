@@ -2,11 +2,30 @@ let results = document.querySelector('.content_search');
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
+let terminoBuscado = queryStringObj.get('resultado');
+console.log(terminoBuscado)
 
-let busqueda = queryStringObj.get('=');
+let url = `https://api.allorigins.win/raw?url=./search-result.html?resultado=${terminoBuscado}`
+    let formulario = document.querySelector(".formulario");
+    let buscador = document.querySelector(".buscador");
+    
+    formulario.addEventListener("submit", function(e){
+        e.preventDefault();
+        if (buscador.value==""){
+            return alert("¡No se puede realizar una búsqueda con el campo vacío!")
+            }
+        else if (buscador.value.length<3){
+            return alert("¡Se debe realizar una búsqueda con al menos 3 caracteres!")
+        }
+        else {
+            this.submit()
+        }
+    
+    })
+    
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/q=' + busqueda)
 
+fetch (url)
     .then(function (response) {
         return response.json();
     })
