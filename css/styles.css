@@ -188,12 +188,6 @@ a{
     background-position: right;
     background-color:rgb(5, 9, 19 )
 }
-.artistas {
-    color: darkgrey;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 40px;
-}
 
 .secdg{
     display: flex;
@@ -220,7 +214,7 @@ a{
 
 .articleff{
     background-color: rgb(0, 0, 0);
-    margin: 50px;
+    margin: 20px;
     border-radius: 20px;
     padding: 40px;
     border: 2px solid rgb(255, 255, 255);
@@ -228,15 +222,15 @@ a{
 }
 .section2ff{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
+    flex-wrap: wrap;
+    
 }
 
 .article2ff{
     background-color: rgb(255, 255, 255);
-    margin: 40px;
+    margin: 20px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     border: 2px solid rgb(160, 160, 160);
     
 }
@@ -249,8 +243,10 @@ a{
 .pff{
     text-align: center;
     color: black;
-    font-size: 18px;
+    font-size: 13px;
 }
+
+
 /*detallesdeldisco*/
 .bodydetalledisco{
     font-family: 'Work Sans', sans-serif;
@@ -691,6 +687,7 @@ padding: 10px;
     margin: 5px;
     border-radius: 5px;
     padding: 5px;
+    justify-content: flex-start;
 }
 .ffcul {
     font-size: small;
@@ -701,8 +698,16 @@ padding: 10px;
 .imagenff{
     width: 70px;
     height: 70px;
+
 }
 .sectionff{
     font-size: 10px;
+
 }
+.section2ff{
+   
+    flex-wrap: wrap;
+    
+}
+
 }

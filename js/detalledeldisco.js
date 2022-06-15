@@ -23,6 +23,8 @@ fetch(urlDisco)
     let genero = document.querySelector(".h4ff");
     let year = document.querySelector(".h5ff");
 
+
+    
     })
 
 
