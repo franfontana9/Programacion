@@ -16,10 +16,9 @@ fetch(url)
       let span = document.querySelector('.a_ad');
 
       span.innerHTML=`<h3 class="h3_ad">${info.name} </h3>
-      <img class="img_red" src="${info.picture}" alt="">
-      <p class="p_da"> </p>`
+      <img class="img_red" src="${info.picture_big}" alt="">
+      <p class="p_da"> Albums </p>`
     })
-
      .catch(function(error){
      console.log(error)
 })
