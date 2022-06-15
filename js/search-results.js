@@ -3,17 +3,16 @@ let results = document.querySelector('.content_search');
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 
-let busqueda = queryStringObj.get('=');
+let busqueda = queryStringObj.get('q');
 
-fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/q=' + busqueda)
+fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=' + busqueda)
 
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        let info = data.data
+        let info = data
         console.log(data);
-        
         
         if (data.length > 0){
         for (let i = 0; i < info.length; i++) {
@@ -26,7 +25,7 @@ fetch ('https://api.allorigins.win/raw?url=https://api.deezer.com/q=' + busqueda
             </article>
             `
             }} else{
-                results.innerHTML=`
+                results.innerHTML =`
                 <h1 class="artistas3">No hay resultados</h1> 
                 `
             } 
