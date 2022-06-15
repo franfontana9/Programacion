@@ -20,10 +20,12 @@ fetch (url)
 
         for(let i=0 ; i<info.length ; i++){
             
-            genero += `<article class= "articleff">
-                         <p class="pff"><a class="pff" href="detalleartistas.html?id=${data.data[i].id}">${data.data[i].name}</a></p>
-                        </article>`
-        }
+            genero +=  `<article class="articleff">  
+            <a  class="ffcul2" href="../paginas/detalledelgenero.html?id=${data.data[i].id}"> 
+            ${data.data[i].name} </a> 
+           </article>`
+        } 
+        
         console.log(articles);
         
         genero.innerHTML = articles;

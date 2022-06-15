@@ -8,10 +8,9 @@ fetch (url)
         console.log(data);
         let info = data.data
         let section = document.querySelector(".ffsection");
-       
         let articles = "";
 
-        for(let i=1 ; i<info.length ; i++){
+        for(let i=0 ; i<info.length ; i++){
             
             articles += `<article class= "ffarticle">
                             <p class="pgeneros">Nombre: ${data.data[i].title}</p>
