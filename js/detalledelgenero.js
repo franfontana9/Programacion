@@ -14,21 +14,9 @@ fetch (url)
     })
     .then(function(data){
         console.log(data);
-        let info = data.data
-        let genero = document.querySelector(".sectionff");
-        let articles = "";
-
-        for(let i=0 ; i<info.length ; i++){
-            
-            genero +=  `<article class="articleff">  
-            <a  class="ffcul2" href="../paginas/detalledelgenero.html?id=${data.data[i].id}"> 
-            ${data.data[i].name} </a> 
-           </article>`
-        } 
-        
-        console.log(articles);
-        
-        genero.innerHTML = articles;
+        let nombre = document.querySelector(".ffcul2");
+        nombre.innerHTML = `<strong>${data.name}</strong>`;
+        nombre.innerHTML = '<strong>' + data.name + '</strong>';
    
     })
 
@@ -48,7 +36,6 @@ fetch(urlDetalle)
 
          info = data.data;
         let section = document.querySelector('.section2ff');
-        let article = document.querySelector('.article2ff');
         let title = document.querySelector('.pff');
         let image = document.querySelector('.imagenff');
 
@@ -58,7 +45,7 @@ fetch(urlDetalle)
         let articles = "";
 
 
-        for(let i=1 ; i<info.length; i++){
+        for(let i=0 ; i<info.length; i++){
             
             articles += `<article class="article2ff">
             <img class="imagenff" src="${data.data[i].picture_big}" height= "100px" width="100px"  >
