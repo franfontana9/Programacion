@@ -6,7 +6,7 @@ let idDetalle = qsToObject.get('id');
 
 let urlDetalle= `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${idDetalle}/artists/`                 
 
-let url =`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/`
+let url =`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${idDetalle}`
 
 fetch (url)
     .then(function(response){
@@ -15,18 +15,19 @@ fetch (url)
     .then(function(data){
         console.log(data);
         let info = data.data
-        let section = document.querySelector(".sectionff");
+        let genero = document.querySelector(".sectionff");
         let articles = "";
 
-        for(let i=1 ; i<4 ; i++){
+        for(let i=0 ; i<info.length ; i++){
             
-            articles += `<article class= "articleff">
-                            <a class="ffcul2" href="detalledelgenero.html?id=${data.data[i].id}">${data.data[i].name}</a>
+            genero += `<article class= "articleff">
+                         <p class="pff"><a class="pff" href="detalleartistas.html?id=${data.data[i].id}">${data.data[i].name}</a></p>
                         </article>`
         }
         console.log(articles);
         
-        section.innerHTML = articles;
+        genero.innerHTML = articles;
+   
     })
 
     .catch(function(error){
