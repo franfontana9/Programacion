@@ -21,10 +21,13 @@ for(let i=0; i< recuperoStorgeToArray.length; i++){
             <a class="pl_dt" href="detalleartistas.html?id=${info.artist.id}">${info.artist.name}</a>
             </article>`
             section.innerHTML =  contenidoSection  
+
+        let padding = document.querySelector('.art_pl')
+
             section.style.display='flex'
             section.style.flexDirection = 'column'
             section.style.margin='20px'
-            section.style.display='flex'
+            padding.style.padding=''
 
 
   
