@@ -29,7 +29,8 @@ let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/searc
 
 
     
-fetch(function (linkArtist) {
+fetch (linkArtist)
+    .then(function (response) {
         return response.json();
     })
     .then(function(data) {
@@ -51,7 +52,7 @@ fetch(function (linkArtist) {
                 <article class="content_search">
                 <h1 class="h1_sr">No hay resultados coincidentes</h1>
             </article>`
-        results.innerHTML = busqueda
+        results.innerHTML = busquedaArtist
         } 
         
 
@@ -87,7 +88,7 @@ fetch (linkTrack)
             <article class="content_search">
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
-    results.innerHTML = busqueda
+    results.innerHTML = busquedaTrack
     } 
         
 
