@@ -23,32 +23,31 @@ let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get('resultado');
 console.log(terminoBuscado)
 
-let url = `https://api.allorigins.win/raw?url=./search-result.html?resultado=${terminoBuscado}`
 let linkArtist = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${terminoBuscado}`
 let linkTrack = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${terminoBuscado}`
 let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${terminoBuscado}`
 
 
     
-.then(function (response) {
+fetch(function (linkArtist) {
         return response.json();
     })
     .then(function(data) {
         let info = data.data
         let results = document.querySelector('.content_search');
-        let busqueda =""
+        let busquedaArtist =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
-            busqueda += `<article> 
-            <a> href="detalleartistas.html?id= ${info[i].name}</a>
+            busquedaArtist += `<article> 
+            <a class='buscar' href="detallartistas.html?id=${info[i].id}>${info[i].name}</a>
             </article>`
 
             }
-        results.innerHTML= busqueda
+        results.innerHTML= busquedaArtist
         } 
         else if(info.length==0){
-                busqueda =`
+                busquedaArtist =`
                 <article class="content_search">
                 <h1 class="h1_sr">No hay resultados coincidentes</h1>
             </article>`
@@ -72,22 +71,24 @@ fetch (linkTrack)
     .then(function (data) {
         let info = data.data
         let results = document.querySelector('.content_search');
-        let busqueda =""
+        let busquedaTrack =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
-            busqueda += `<article> 
-            <a> href="detail-track.html?id=${info[i].title}</a>
+            busquedaTrack += `<article> 
+            <a class='buscar' href="detail-track.html?id=${info[i].id}>${info[i].title}</a>
             </article>`
 
             }
-        results.innerHTML= busqueda
+        results.innerHTML= busquedaTrack
         } 
-        else if(info.length=0){
-                results.innerHTML=`
-                <h1 class="artistas3">No hay resultados</h1> 
-                `
-        } 
+        else if(info.length==0){
+            busquedaTrack =`
+            <article class="content_search">
+            <h1 class="h1_sr">No hay resultados coincidentes</h1>
+        </article>`
+    results.innerHTML = busqueda
+    } 
         
 
            
@@ -104,22 +105,24 @@ fetch (linkAlbum)
     .then(function (data) {
         let info = data.data
         let results = document.querySelector('.content_search');
-        let busqueda =""
+        let busquedaAlbum =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
             busqueda += `<article> 
-            <a> href="detalledeldisco.html?id=${info[i].album}</a>
+           <a class='buscar' href="detalledeldisco.html?id=${info[i].id}>${info[i].title}</a>
             </article>`
 
             }
-        results.innerHTML= busqueda
+        results.innerHTML= busquedaAlbum
         } 
-        else if(info.length=0){
-                results.innerHTML=`
-                <h1 class="artistas3">No hay resultados</h1> 
-                `
-        } 
+        else if(info.length==0){
+            busquedaAlbum =`
+            <article class="content_search">
+            <h1 class="h1_sr">No hay resultados coincidentes</h1>
+        </article>`
+    results.innerHTML = busquedaAlbum
+    } 
         
 
            
