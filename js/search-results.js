@@ -28,19 +28,20 @@ let linkTrack = `https://api.allorigins.win/raw?url=https://api.deezer.com/searc
 let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${terminoBuscado}`
 
 
-fetch(linkArtist)  
-    .then(function(response) {
-        return response.json();
+    
+fetch(linkArtist)
+    .then(function(response){
+    return response.json()
     })
     .then(function(data) {
         let info = data.data
         let results = document.querySelector('.content_search');
-        let busquedaArtist=""
+        let busquedaArtist =""
         console.log(data);
         if (info.length>0){
-        for (let i=0; i<info.length; i++){
+        for (let i=0; i<info.length; i++) {
             busquedaArtist += `<article> 
-            <a class= "buscar" href="detalleartistas.html?id=${info[i].id}>${info[i].name}</a>
+            <a class='buscar' href="detallartistas.html?id=${info[i].id}>${info[i].name}</a>
             </article>`
 
             }
@@ -87,18 +88,19 @@ fetch (linkTrack)
         </article>`
     results.innerHTML = busquedaTrack
     }  
+    } 
         
       
-    })
+    )
     .catch(function (error) {
         console.log(error);
     })
 
 fetch (linkAlbum)
-    .then(function (response) {
+    .then(function(response) {
         return response.json();
     })
-    .then(function (data) {
+    .then(function(data) {
         let info = data.data
         let results = document.querySelector('.content_search');
         let busquedaAlbum =""
