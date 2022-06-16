@@ -43,8 +43,6 @@ fetch(link)
 })
 
 
-
-
 //Buscador
 let formulario = document.querySelector(".formulario");
 let buscador = document.querySelector(".buscador");

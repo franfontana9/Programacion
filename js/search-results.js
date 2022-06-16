@@ -17,7 +17,6 @@ formulario.addEventListener("submit", function(e){
 
 //
 
-
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get('resultado');
@@ -29,9 +28,9 @@ let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/searc
 
 
     
-fetch(linkArtist)
-    .then(function(response){
-    return response.json()
+fetch (linkArtist)
+    .then(function (response) {
+        return response.json();
     })
     .then(function(data) {
         let info = data.data
@@ -41,7 +40,7 @@ fetch(linkArtist)
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
             busquedaArtist += `<article> 
-            <a class='buscar' href="detallartistas.html?id=${info[i].id}>${info[i].name}</a>
+            <a class='buscar' href="./detallartistas.html?id=${info[i].id}">${info[i].name}</a>
             </article>`
 
             }
@@ -55,7 +54,9 @@ fetch(linkArtist)
         results.innerHTML = busquedaArtist
         } 
         
-       
+
+           
+        
     })
     .catch(function (error) {
         console.log(error);
@@ -75,7 +76,7 @@ fetch (linkTrack)
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
             busquedaTrack += `<article> 
-            <a class="buscar" href="detail-track.html?id=${info[i].id}>${info[i].title}</a>
+            <a class='buscar' href="./detail-track.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
 
             }
@@ -87,20 +88,21 @@ fetch (linkTrack)
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
     results.innerHTML = busquedaTrack
-    }  
     } 
         
-      
-    )
+
+           
+        
+    })
     .catch(function (error) {
         console.log(error);
     })
 
 fetch (linkAlbum)
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
         let info = data.data
         let results = document.querySelector('.content_search');
         let busquedaAlbum =""
@@ -108,7 +110,7 @@ fetch (linkAlbum)
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
             busquedaAlbum += `<article> 
-            <a class= "buscar" href="detalledeldisco.html?id=${info[i].id}>${info[i].title}</a>
+           <a class='buscar' href="./detalledeldisco.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
 
             }
@@ -122,9 +124,10 @@ fetch (linkAlbum)
     results.innerHTML = busquedaAlbum
     } 
         
-   
+
+           
+        
     })
     .catch(function (error) {
         console.log(error);
     })
-
