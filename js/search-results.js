@@ -1,3 +1,5 @@
+let formulario = document.querySelector(".formulario");
+let buscador = document.querySelector(".buscador");
 //Buscador
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
@@ -15,7 +17,6 @@ formulario.addEventListener("submit", function(e){
 
 //
 
-let results = document.querySelector('.content_search');
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
@@ -23,34 +24,36 @@ let terminoBuscado = queryStringObj.get('resultado');
 console.log(terminoBuscado)
 
 let url = `https://api.allorigins.win/raw?url=./search-result.html?resultado=${terminoBuscado}`
-    let formulario = document.querySelector(".formulario");
-    let buscador = document.querySelector(".buscador");
+let linkArtist = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${terminoBuscado}`
+let linkTrack = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${terminoBuscado}`
+let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${terminoBuscado}`
+
 
     
-fetch (url)
+fetch (linkArtist)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         let info = data.data
+        let results = document.querySelector('.content_search');
+        let busqueda =""
         console.log(data);
-        
-        
-        if (data.length > 0){
-        for (let i = 0; i < info.length; i++) {
-            
-            results.innerHTML += `<article>
-            <img scr=${info.data[i].picture}        alt=""   />
-            <a href="./detail-track.html?Id=${info.data[i].id}"> 
-            <p>Name:${info.data[i].title}   </p>
-            </a>
-            </article>
-            `
-            }} else{
+        if (info.length>0){
+        for (let i=0; i<info.length; i++) {
+            busqueda += `<article> 
+            <a> href="detalleartistas.html?id= ${info[i].name}</a>
+            </article>`
+
+            }
+        results.innerHTML= busqueda
+        } 
+        else if(info.length=0){
                 results.innerHTML=`
                 <h1 class="artistas3">No hay resultados</h1> 
                 `
-            } 
+        } 
+        
 
            
         
@@ -58,3 +61,70 @@ fetch (url)
     .catch(function (error) {
         console.log(error);
     })
+
+
+    
+fetch (linkTrack)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        let info = data.data
+        let results = document.querySelector('.content_search');
+        let busqueda =""
+        console.log(data);
+        if (info.length>0){
+        for (let i=0; i<info.length; i++) {
+            busqueda += `<article> 
+            <a> href="detail-track.html?id=${info[i].title}</a>
+            </article>`
+
+            }
+        results.innerHTML= busqueda
+        } 
+        else if(info.length=0){
+                results.innerHTML=`
+                <h1 class="artistas3">No hay resultados</h1> 
+                `
+        } 
+        
+
+           
+        
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
+
+fetch (linkAlbum)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        let info = data.data
+        let results = document.querySelector('.content_search');
+        let busqueda =""
+        console.log(data);
+        if (info.length>0){
+        for (let i=0; i<info.length; i++) {
+            busqueda += `<article> 
+            <a> href="detalledeldisco.html?id=${info[i].album}</a>
+            </article>`
+
+            }
+        results.innerHTML= busqueda
+        } 
+        else if(info.length=0){
+                results.innerHTML=`
+                <h1 class="artistas3">No hay resultados</h1> 
+                `
+        } 
+        
+
+           
+        
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
+
