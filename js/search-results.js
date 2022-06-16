@@ -1,4 +1,23 @@
-let results = document.querySelector('.content_search');
+let formulario = document.querySelector(".formulario");
+let buscador = document.querySelector(".buscador");
+//Buscador
+formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+    if (buscador.value==""){
+        return alert("¡No se puede realizar una búsqueda con el campo vacío!")
+        }
+    else if (buscador.value.length<3){
+        return alert("¡Se debe realizar una búsqueda con al menos 3 caracteres!")
+    }
+    else {
+        this.submit()
+    }
+
+})
+
+//
+
+
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
@@ -6,49 +25,34 @@ let terminoBuscado = queryStringObj.get('resultado');
 console.log(terminoBuscado)
 
 let url = `https://api.allorigins.win/raw?url=./search-result.html?resultado=${terminoBuscado}`
-    let formulario = document.querySelector(".formulario");
-    let buscador = document.querySelector(".buscador");
-    
-    formulario.addEventListener("submit", function(e){
-        e.preventDefault();
-        if (buscador.value==""){
-            return alert("¡No se puede realizar una búsqueda con el campo vacío!")
-            }
-        else if (buscador.value.length<3){
-            return alert("¡Se debe realizar una búsqueda con al menos 3 caracteres!")
-        }
-        else {
-            this.submit()
-        }
-    
-    })
-    
+let link = `https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=${terminoBuscado}`
 
 
-fetch (url)
+    
+fetch (link)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         let info = data.data
+        let results = document.querySelector('.content_search');
+        let busqueda =""
         console.log(data);
-        
-        
-        if (data.length > 0){
-        for (let i = 0; i < info.length; i++) {
-            
-            results.innerHTML += `<article>
-            <img scr=${info.data[i].picture}        alt=""   />
-            <a href="./detail-track.html?Id=${info.data[i].id}"> 
-            <p>Name:${info.data[i].title}   </p>
-            </a>
-            </article>
-            `
-            }} else{
+        if (info.length>0){
+        for (let i=0; i<info.length; i++) {
+            busqueda += `<article> 
+            <p>${info[i].title}</p>
+            </article>`
+
+            }
+        results.innerHTML= busqueda
+        } 
+        else if(info.length=0){
                 results.innerHTML=`
                 <h1 class="artistas3">No hay resultados</h1> 
                 `
-            } 
+        } 
+        
 
            
         
@@ -56,4 +60,6 @@ fetch (url)
     .catch(function (error) {
         console.log(error);
     })
+
+
     
