@@ -4,9 +4,14 @@ let idDetalle = qsToObject.get('id');
 
 
 
-let urlDetalle= `https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${idDetalle}/artists/`                 
+let urlDetalle= `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${idDetalle}/artists/`                 
 
-let url =`https://api.allorigins.win/raw?url=https://api.deezer.com/genre/${idDetalle}`
+let url =`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${idDetalle}`
+
+
+
+https://cors-anywhere.herokuapp.com/
+
 
 fetch (url)
     .then(function(response){

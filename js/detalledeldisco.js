@@ -4,7 +4,8 @@ let idDisco = qsToObject.get('id');
 console.log(idDisco);
 
 
-let urlDisco = `https://api.allorigins.win/raw?url=https://api.deezer.com/album/${idDisco}`
+let urlDisco = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${idDisco}`
+
 
 
 
