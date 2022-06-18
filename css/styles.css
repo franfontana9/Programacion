@@ -431,6 +431,10 @@ a{
     justify-content: space-around;
 }
 
+.ar_pl{
+    margin: 20px;
+}
+
 .a_ad{
     display: flex;
     flex-direction: column;
