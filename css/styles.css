@@ -73,10 +73,10 @@ a{
 }
 
 .bg{
-    background-image: url(../img/musica3.jpg);
+    background-image: url("../img/musica3.jpg");
 }
 .index{
-    background-image: url(../img/musica3.jpg);
+    background-image: url("../img/musica3.jpg");
 }
 
 /*detalle de canción*/
@@ -420,11 +420,6 @@ a{
     background-color:rgb(5, 9, 19 )
 }
 
-.sect_ad{
-   /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XtauLchPNeTr2Z3Kefs1vqC53EIicaSFfghhMK5bWA5b_dzhxiimCg7uJ-EGm1EnNuU&usqp=CAU);
-    background-size: 200px;
-    background-repeat: repeat;*/
-}
 
 .h1_ad{
     color: white;

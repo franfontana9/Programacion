@@ -37,9 +37,7 @@ fetch(urlDetalle)
     if(recuperoLista){
         let cancionesArray = JSON.parse(recuperoLista)
         cancionesFavoritas = cancionesArray
-    }
-
-    
+    } 
     cancion.addEventListener("click", function(evento){
         evento.preventDefault()
 
@@ -75,6 +73,9 @@ formulario.addEventListener("submit", function(e){
         }
     else if (buscador.value.length<3){
         return alert("¡Se debe realizar una búsqueda con al menos 3 caracteres!")
+    }
+    else{
+        this.submit()
     }
 
 })

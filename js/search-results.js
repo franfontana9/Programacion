@@ -22,53 +22,52 @@ let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get('resultado');
 console.log(terminoBuscado)
 
-let linkArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${terminoBuscado}`
-let linkTrack = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${terminoBuscado}`
-let linkAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${terminoBuscado}`
+let linkArtist=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${terminoBuscado}`
+let linkTrack=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${terminoBuscado}`
+let linkAlbum=`https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${terminoBuscado}`
 
 let sectionBusqueda = document.querySelector('.content_search');
+let termino = document.querySelector(".termino")
 
-    
-fetch (linkArtist)
-    .then(function (response) {
+termino.innerHTML = `<p> Termino buscado : ${terminoBuscado}</p>`
+
+//Artistas 
+let articleArtist = document.querySelector('.articleArtist');
+fetch(linkArtist)
+    .then(function(response){
         return response.json();
     })
-    .then(function(data) {
+    .then(function(data){
         let info = data.data
-        let articleArtist = document.querySelector('.articleArtist');
         let busquedaArtist =""
         console.log(data);
         if (info.length>0){
-        for (let i=0; i<info.length; i++) {
+            for (let i=0; i<info.length; i++) {
             busquedaArtist += 
             `<article class="articleArtist"> 
             <a class='buscar' href="./detalleartistas.html?id=${info[i].id}">${info[i].name}</a>
             </article>`
-
-            }
-        articleArtist.innerHTML = busquedaArtist 
-        
+        }
+        articleArtist.innerHTML = busquedaArtist
         } 
         else if(info.length==0){
                 busquedaArtist =`
                 <article class="articleArtist">
                 <h1 class="h1_sr">No hay resultados coincidentes</h1>
             </article>`
-        articleArtist.innerHTML = busquedaArtist
-        } 
-        
-
-           
-        
+            articleArtist.innerHTML = busquedaArtist
+        }     
+        articleArtist.innerHTML = busquedaArtist  
     })
     .catch(function (error) {
         console.log(error);
     })
 
 
-    
-fetch (linkTrack)
-    .then(function (response) {
+//Tracks
+let articleTrack = document.querySelector('.articleTrack');
+fetch(linkTrack)
+    .then(function (response){
         return response.json();
     })
     .then(function (data) {
@@ -77,7 +76,7 @@ fetch (linkTrack)
         let busquedaTrack =""
         console.log(data);
         if (info.length>0){
-        for (let i=0; i<info.length; i++) {
+        for (let i=0; i<info.length; i++) { 
             busquedaTrack += `<article class= "articleTrack"> 
             <a class='buscar' href="./detail-track.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
@@ -92,16 +91,15 @@ fetch (linkTrack)
         </article>`
     articleTrack.innerHTML = busquedaTrack
     } 
-        
-
-           
-        
+      
     })
     .catch(function (error) {
         console.log(error);
     })
 
-fetch (linkAlbum)
+//Albums 
+let articleAlbum = document.querySelector('.articleAlbum');  
+fetch(linkAlbum)
     .then(function (response) {
         return response.json();
     })
@@ -115,7 +113,6 @@ fetch (linkAlbum)
             busquedaAlbum += `<article> 
            <a class='buscar' href="./detalledeldisco.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
-
             }
         articleAlbum.innerHTML= busquedaAlbum
         } 
@@ -125,8 +122,8 @@ fetch (linkAlbum)
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
     articleAlbum.innerHTML = busquedaAlbum
-    } 
-        
+    }  
+
     sectionBusqueda.style.display="flex"
     sectionBusqueda.style.flexDirection = "row"
     sectionBusqueda.style.justifyContent = "space-between"
@@ -135,3 +132,10 @@ fetch (linkAlbum)
     .catch(function (error) {
         console.log(error);
     })
+
+    if(terminoBuscado==null){
+        termino.innerHTML = `<p></p>`
+
+    }  
+
+
