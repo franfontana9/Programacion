@@ -17,7 +17,6 @@ formulario.addEventListener("submit", function(e){
 
 //
 
-
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get('resultado');
@@ -27,6 +26,7 @@ let linkArtist = `https://api.allorigins.win/raw?url=https://api.deezer.com/sear
 let linkTrack = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${terminoBuscado}`
 let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${terminoBuscado}`
 
+let sectionBusqueda = document.querySelector('.content_search');
 
     
 fetch (linkArtist)
@@ -35,24 +35,26 @@ fetch (linkArtist)
     })
     .then(function(data) {
         let info = data.data
-        let results = document.querySelector('.content_search');
+        let articleArtist = document.querySelector('.articleArtist');
         let busquedaArtist =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
-            busquedaArtist += `<article> 
-            <a class='buscar' href="detallartistas.html?id=${info[i].id}>${info[i].name}</a>
+            busquedaArtist += 
+            `<article class="articleArtist"> 
+            <a class='buscar' href="./detalleartistas.html?id=${info[i].id}">${info[i].name}</a>
             </article>`
 
             }
-        results.innerHTML= busquedaArtist
+        articleArtist.innerHTML = busquedaArtist 
+        
         } 
         else if(info.length==0){
                 busquedaArtist =`
-                <article class="content_search">
+                <article class="articleArtist">
                 <h1 class="h1_sr">No hay resultados coincidentes</h1>
             </article>`
-        results.innerHTML = busquedaArtist
+        articleArtist.innerHTML = busquedaArtist
         } 
         
 
@@ -71,24 +73,24 @@ fetch (linkTrack)
     })
     .then(function (data) {
         let info = data.data
-        let results = document.querySelector('.content_search');
+        let articleTrack = document.querySelector('.articleTrack');
         let busquedaTrack =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
-            busquedaTrack += `<article> 
-            <a class='buscar' href="detail-track.html?id=${info[i].id}>${info[i].title}</a>
+            busquedaTrack += `<article class= "articleTrack"> 
+            <a class='buscar' href="./detail-track.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
 
             }
-        results.innerHTML= busquedaTrack
+        articleTrack.innerHTML= busquedaTrack
         } 
         else if(info.length==0){
             busquedaTrack =`
-            <article class="content_search">
+            <article class="articleTrack">
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
-    results.innerHTML = busquedaTrack
+    articleTrack.innerHTML = busquedaTrack
     } 
         
 
@@ -105,31 +107,31 @@ fetch (linkAlbum)
     })
     .then(function (data) {
         let info = data.data
-        let results = document.querySelector('.content_search');
+        let articleAlbum = document.querySelector('.articleAlbum');
         let busquedaAlbum =""
         console.log(data);
         if (info.length>0){
         for (let i=0; i<info.length; i++) {
-            busqueda += `<article> 
-           <a class='buscar' href="detalledeldisco.html?id=${info[i].id}>${info[i].title}</a>
+            busquedaAlbum += `<article> 
+           <a class='buscar' href="./detalledeldisco.html?id=${info[i].id}">${info[i].title}</a>
             </article>`
 
             }
-        results.innerHTML= busquedaAlbum
+        articleAlbum.innerHTML= busquedaAlbum
         } 
         else if(info.length==0){
             busquedaAlbum =`
-            <article class="content_search">
+            <article class="articleAlbum">
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
-    results.innerHTML = busquedaAlbum
+    articleAlbum.innerHTML = busquedaAlbum
     } 
         
-
-           
+    sectionBusqueda.style.display="flex"
+    sectionBusqueda.style.flexDirection = "row"
+    sectionBusqueda.style.justifyContent = "space-between"
         
     })
     .catch(function (error) {
         console.log(error);
     })
-
