@@ -3,8 +3,8 @@ let qsToObject = new URLSearchParams(queryString);
 let idArtist = qsToObject.get("id");
 console.log(idArtist);
 
-let link = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${idArtist}/albums`
-let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${idArtist}`;
+let link = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${idArtist}/albums`
+let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${idArtist}`;
 
 fetch(url)
      .then(function(response){

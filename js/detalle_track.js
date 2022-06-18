@@ -4,7 +4,7 @@ let idTrack = qsToObject.get("id");
 console.log(idTrack);
 
 
-let urlDetalle = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${idTrack}`
+let urlDetalle = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${idTrack}`
 
 
 fetch(urlDetalle)

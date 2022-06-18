@@ -22,9 +22,9 @@ let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get('resultado');
 console.log(terminoBuscado)
 
-let linkArtist = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/artist?q=${terminoBuscado}`
-let linkTrack = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/track?q=${terminoBuscado}`
-let linkAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/search/album?q=${terminoBuscado}`
+let linkArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q=${terminoBuscado}`
+let linkTrack = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${terminoBuscado}`
+let linkAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=${terminoBuscado}`
 
 let sectionBusqueda = document.querySelector('.content_search');
 
