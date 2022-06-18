@@ -1,7 +1,7 @@
 //canciones
 
 
-let url="https://api.allorigins.win/raw?url=http://api.deezer.com/chart/0/tracks"
+let url="https://cors-anywhere.herokuapp.com/http://api.deezer.com/chart/0/tracks"
 
 fetch(url)
     .then(function(response){
@@ -31,7 +31,7 @@ fetch(url)
     })
 
 //Artistas
- let album = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums"
+ let album = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums"
  
  fetch(album)
     .then(function(response){
@@ -57,7 +57,7 @@ fetch(url)
         console.log(error);
     })
 //Artistas
-let urlArtistas = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists"
+let urlArtistas = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists"
 let artistas = document.querySelector(".art")
 let listaArtistas = ""
 

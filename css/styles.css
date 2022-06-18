@@ -73,10 +73,10 @@ a{
 }
 
 .bg{
-    background-image: url(../img/musica3.jpg);
+    background-image: url("../img/musica3.jpg");
 }
 .index{
-    background-image: url(../img/musica3.jpg);
+    background-image: url("../img/musica3.jpg");
 }
 
 /*detalle de canción*/
@@ -97,7 +97,7 @@ a{
     padding: 90px;
     margin: 20px;
     border-radius: 50px;
-    border: 5px rgb(235, 235, 242) solid;
+    border: 3px rgb(235, 235, 242) solid;
 
 }
 
