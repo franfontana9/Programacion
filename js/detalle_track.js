@@ -37,9 +37,7 @@ fetch(urlDetalle)
     if(recuperoLista){
         let cancionesArray = JSON.parse(recuperoLista)
         cancionesFavoritas = cancionesArray
-    }
-
-    
+    } 
     cancion.addEventListener("click", function(evento){
         evento.preventDefault()
 
