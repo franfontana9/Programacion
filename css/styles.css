@@ -32,8 +32,8 @@
     margin: 25px;
     padding: 50px;
     color:darkgrey;
-    border-radius: 10px;
-    border: solid 10px rgb(0, 0, 0);
+    border-radius: 20px;
+    border: solid 5px rgb(0, 0, 0);
 
 }
 .nav{
@@ -96,7 +96,7 @@ a{
     background-color: rgb(78, 109, 120);
     padding: 90px;
     margin: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 5px rgb(235, 235, 242) solid;
 
 }
@@ -105,7 +105,7 @@ a{
     background-color: rgb(38, 55, 70);
     border: solid 3px rgb(23, 42, 58);
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 50px;
     color: rgb(196, 205, 212);
 }
 
@@ -145,9 +145,9 @@ a{
 .arth1{
     background-color: rgb(0, 0, 0);
     margin: 30px;
-    border-radius: 40px;
+    border-radius: 20px;
     padding-top: 5px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
 }
 .ffh1 {
     color: rgb(220, 215, 215);
@@ -174,7 +174,7 @@ a{
     margin: 20px;
     border-radius: 20px;
     padding: 50px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     text-align: center;
    
    
@@ -198,7 +198,7 @@ a{
     margin: 30px;
     border-radius: 20px;
     padding: 20px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     background-color: black;
 }
 .Dtitulo {
@@ -218,7 +218,7 @@ a{
     margin: 20px;
     border-radius: 20px;
     padding: 40px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
 
 }
 .section2ff{
@@ -232,7 +232,7 @@ a{
     margin: 20px;
     border-radius: 20px;
     padding: 30px;
-    border: 2px solid rgb(160, 160, 160);
+    border: 5px solid rgb(160, 160, 160);
     
 }
 .ffcul {
@@ -265,9 +265,9 @@ a{
 }
 .h1art{
     margin: 40px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     background-color: black;
 }
 .h1ddd{
@@ -280,12 +280,12 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
-    border: 2px solid white;
+    border: 5px solid white;
     flex-wrap: wrap;
     width: 600px;
     padding: 20px;
     margin: 10px;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: black;
     }
 .h2ff{
@@ -309,7 +309,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .canciones{
@@ -360,13 +360,15 @@ a{
 }
 
 .h2_pl{
-    color: rgb(196, 205, 212);    
-}
+    color: azure;
+    font-size: 50px;}
 
 .m_pl{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    background-image: url(../img/musica3.jpg);
+
 }
 
 .sec_pl{
@@ -377,10 +379,10 @@ a{
 .art_pl{
     text-decoration: none;
     list-style: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     font-size: 30px;
-    border: 4px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     padding: 10px;
     background-color:rgb(47, 47, 87) ;
     color: rgb(196, 205, 212);    
@@ -403,9 +405,9 @@ a{
 
 .addsong_pl{
     background-color: rgb(38, 55, 70);
-    border: solid 3px rgb(23, 42, 58);
+    border: solid 5px rgb(23, 42, 58);
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     color: rgb(196, 205, 212);    
 }
 
@@ -444,7 +446,7 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
-    border: 2px solid white;
+    border: 5px solid white;
     flex-wrap: wrap;
     width: 700px;
     padding: 20px;
@@ -478,9 +480,9 @@ a{
 }
 
 .even_da{
-    border: 2px solid rgb(240, 79, 16);
+    border: 5px solid rgb(240, 79, 16);
     padding: 10px;
-    border-radius: 15px ;
+    border-radius: 20px ;
     text-align: center;
 }
 
@@ -562,16 +564,16 @@ abbr{
     .art_pl{
         text-decoration: none;
         list-style: none;
-        border-radius: 10px;
+        border-radius: 20px;
         font-size: 15px;
-        border: 4px solid rgb(0, 0, 0);
+        border: 5px solid rgb(0, 0, 0);
         background-color:rgb(47, 47, 87) ;
     }
 
     .addsong_pl{
         background-color: rgb(38, 55, 70);
-        border: solid 3px rgb(23, 42, 58);
-        border-radius: 5px;
+        border: solid 5px rgb(23, 42, 58);
+        border-radius: 20px;
         color: rgb(196, 205, 212);    
         font-size: small;
     }
@@ -607,7 +609,7 @@ abbr{
 
     .h1art{
         margin: 5px;
-        border-radius: 5px;
+        border-radius: 20px;
         padding: 5px;
     }
     .h1ddd{
@@ -689,14 +691,14 @@ padding: 10px;
 
 .articleff{
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
 }
 
 
 .article2ff{
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 5px;
     justify-content: flex-start;
 }
