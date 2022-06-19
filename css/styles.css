@@ -451,7 +451,12 @@ a{
 
 .h3_ad{
     text-align: center;
+    font-size: 40px;
     }
+
+.h3album{
+    text-decoration: none;
+}
 
 .img_red{
     display: flex;

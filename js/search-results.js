@@ -43,21 +43,19 @@ fetch(linkArtist)
         console.log(data);
         if (info.length>0){
             for (let i=0; i<info.length; i++) {
-            busquedaArtist += 
-            `<article class="articleArtist"> 
+            busquedaArtist += `<article class="articleArtist"> 
             <a class='buscar' href="./detalleartistas.html?id=${info[i].id}">${info[i].name}</a>
             </article>`
         }
         articleArtist.innerHTML = busquedaArtist
         } 
         else if(info.length==0){
-                busquedaArtist =`
-                <article class="articleArtist">
+                busquedaArtist =`<article class="articleArtist">
                 <h1 class="h1_sr">No hay resultados coincidentes</h1>
             </article>`
             articleArtist.innerHTML = busquedaArtist
         }     
-        articleArtist.innerHTML = busquedaArtist  
+
     })
     .catch(function (error) {
         console.log(error);
@@ -85,8 +83,7 @@ fetch(linkTrack)
         articleTrack.innerHTML= busquedaTrack
         } 
         else if(info.length==0){
-            busquedaTrack =`
-            <article class="articleTrack">
+            busquedaTrack =`<article class="articleTrack">
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
     articleTrack.innerHTML = busquedaTrack
@@ -117,8 +114,7 @@ fetch(linkAlbum)
         articleAlbum.innerHTML= busquedaAlbum
         } 
         else if(info.length==0){
-            busquedaAlbum =`
-            <article class="articleAlbum">
+            busquedaAlbum =`<article class="articleAlbum">
             <h1 class="h1_sr">No hay resultados coincidentes</h1>
         </article>`
     articleAlbum.innerHTML = busquedaAlbum
