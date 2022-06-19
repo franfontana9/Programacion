@@ -128,10 +128,6 @@ fetch(linkAlbum)
     .catch(function (error) {
         console.log(error);
     })
-
-    if(terminoBuscado==null){
-        termino.innerHTML = `<p></p>`
-
-    }  
+     
 
 

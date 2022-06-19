@@ -33,15 +33,8 @@ fetch(urlDetalle)
     // Favoritos
     let cancion = document.querySelector(".cancion");
     let cancionesFavoritas = [];
-    let recuperoLista = localStorage.getItem("cancionesFavoritas");
-    if(recuperoLista){
-        let cancionesArray = JSON.parse(recuperoLista)
-        cancionesFavoritas = cancionesArray
-    } 
     cancion.addEventListener("click", function(evento){
         evento.preventDefault()
-
-
         if(cancionesFavoritas.includes(idTrack)){
             let sacarCancion = cancionesFavoritas.indexOf(idTrack)
             cancionesFavoritas.splice(sacarCancion, 1);
@@ -53,8 +46,13 @@ fetch(urlDetalle)
         }
 
         let cancionesFavoritasString = JSON.stringify(cancionesFavoritas)
-        localStorage.setItem("cancionesFavoritas", cancionesFavoritasString);
+        localStorage.setItem("cancionesFavoritas", cancionesFavoritasString); 
     })
+    let recuperoLista = localStorage.getItem("cancionesFavoritas");
+    if(recuperoLista){
+        let cancionesArray = JSON.parse(recuperoLista)
+        cancionesFavoritas = cancionesArray
+    }
 
     })
     .catch(function(error){
