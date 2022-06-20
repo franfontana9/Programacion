@@ -604,9 +604,11 @@ abbr{
      /*ff*/
     /*detallediscos*/
     .bodydetalledisco{
-        background-size: 6cm;
+        background-size: 2cm;
     }
-
+    .art_ad {
+        padding: 15px;
+    }
     .h1art{
         margin: 5px;
         border-radius: 20px;
@@ -618,7 +620,7 @@ abbr{
     .spanff{
         width: 280px;
         margin: 5px;
-        height: 700px;
+        height: 900px;
         }
     .h2ff{
             display: flex;
@@ -633,16 +635,16 @@ abbr{
             
             font-size: small;
             }
+    .h5ff{
+        font-size: small;
+    }
     .imgdd{
         display: flex;
         justify-content: center;
-        width: 50px;     
-        height: 50px;
+        width: 150px;     
+        height: 150px;
     }
-.iframeff{
-    width: 250px;
-    height: 300px;
-}
+
     /*generos*/  
 
  .arth1{
@@ -659,22 +661,16 @@ font-size: small;
 }
 
 .ffarticle{
-margin: 15px;
-padding: 10px;
-}
-.ff2article{
-margin: 15px;
-padding: 10px;
-}
-.ff3article{
-margin: 15px;
-padding: 10px;
+margin: 5px;
+padding: 5px;
 }
 
 .fondo{
-    background-size: cover ;
+    background-size: 200px;
 }
-
+.ffsection{
+    flex-direction: row;
+}
 /*detallegenero*/
 
 
@@ -692,7 +688,7 @@ padding: 10px;
 .articleff{
     margin: 5px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -700,9 +696,12 @@ padding: 10px;
     margin: 5px;
     border-radius: 20px;
     padding: 5px;
-    justify-content: flex-start;
+    
 }
 .ffcul {
+    font-size: small;
+}
+.ffcul2{
     font-size: small;
 }
 .pff{
@@ -713,14 +712,11 @@ padding: 10px;
     height: 70px;
 
 }
-.sectionff{
-    font-size: 10px;
 
-}
 .section2ff{
    
     flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 }
