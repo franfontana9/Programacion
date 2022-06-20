@@ -3,7 +3,7 @@ let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
  "https://api.allorigins.win/raw?url= https://api.deezer.com/genre"
 
 
-https://cors-anywhere.herokuapp.com/
+
 
 
 
@@ -27,7 +27,7 @@ fetch (url)
 
         }
 
-        console.log(articles);
+        
         
         section.innerHTML = articles;
 
