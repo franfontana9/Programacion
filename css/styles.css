@@ -315,7 +315,6 @@ a{
 .canciones{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .canciones li {
