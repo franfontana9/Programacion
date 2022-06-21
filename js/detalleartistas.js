@@ -14,6 +14,8 @@ fetch(url)
       console.log(data);
       let info=data;
       let span = document.querySelector('.a_ad');
+      let back = document.querySelector('.detalleBack');
+      back.style.backgroundImage= `url(${data.picture_medium})`;
 
       span.innerHTML=`<h3 class="h3_ad">${info.name} </h3>
       <img class="img_red" src="${info.picture_big}" alt="">
@@ -32,6 +34,7 @@ fetch(link)
       console.log(data);
       let info=data.data;
       let span = document.querySelector('.a_ad');
+      
       for(let i=0; i<5;i++){
         span.innerHTML  +=`<a class="p_da" href="./detalledeldisco.html?id=${info[i].id}"> ${info[i].title} </a>`
       }
