@@ -428,9 +428,33 @@ a{
     font-size: 40px;
 }
 
+.listAlbum{
+    display: flex;
+    list-style: none;
+    font-size: large;
+    flex-direction: column;
+    padding: 5px;
+
+    align-items: center;
+
+}
+
+
+
+.article_ad{
+    display: flex;
+}
+
+.flexsect{
+    display: flex;
+justify-content: center;
+}
+
+
 .art_ad{
     display: flex;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
 }
 
 .ar_pl{
@@ -447,6 +471,9 @@ a{
     padding: 20px;
     background-color: rgb(0, 0, 0);
     margin: 30px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 }
 
 .h3_ad{
