@@ -21,7 +21,6 @@ fetch (url)
         console.log(data);
         let nombre = document.querySelector(".ffcul2");
         nombre.innerHTML = `<strong>${data.name}</strong>`;
-        nombre.innerHTML = '<strong>' + data.name + '</strong>';
    
     })
 

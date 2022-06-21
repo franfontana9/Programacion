@@ -22,8 +22,8 @@ fetch(url)
          }
          sectionCanciones.innerHTML = lista;
          sectionCanciones.style.display="flex";
-         sectionCanciones.style.flexDirection="column"
-         sectionCanciones.style.flexWrap="noWrap";
+         sectionCanciones.style.flexDirection="column";
+         sectionCanciones.style.justifyContent="flex-start";
  
     })
     .catch(function(error){
@@ -75,7 +75,6 @@ fetch(urlArtistas)
             </article>
             `
         }
-        console.log(listaArtistas);
         artistas.innerHTML = listaArtistas
     })
 
